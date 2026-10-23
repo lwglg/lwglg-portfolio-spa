@@ -381,7 +381,7 @@
     "subtitle": "Send a message. You will receive a confirmation e-mail.",
     "form": {
       "firstName": "First name",
-      "lastName": "Surname",
+      "lastName": "Last name",
       "email": "E-mail",
       "organisation": "Organisation name (optional)",
       "phone": "Telephone (optional)",

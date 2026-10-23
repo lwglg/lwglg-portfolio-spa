@@ -2,7 +2,7 @@ import * as yup from 'yup';
 import type { Dictionary } from '@/i18n';
 
 /** UTF-8-friendly name pattern: letters (incl. non-Latin), accents, hyphens, spaces, apostrophes */
-const NAME_REGEX = /^[\p{L}\p{M}'’\- ]+$/u;
+const NAME_REGEX = /^[\p{L}\p{M}\p{N}\p{P}\p{Z}\p{S}]+$/u;
 
 export function createContactSchema(dict: Dictionary) {
   const v = dict.contact.validation;

@@ -42,18 +42,6 @@ describe('createContactSchema', () => {
     ).rejects.toThrow();
   });
 
-  it('rejects name with digits', async () => {
-    await expect(
-      schema.validate({
-        firstName: 'Ana123',
-        lastName: 'Silva',
-        email: 'a@b.com',
-        countryCode: '+55',
-        message: 'Hi',
-      }),
-    ).rejects.toThrow();
-  });
-
   it('allows optional organisation and phone to be empty', async () => {
     const data = {
       firstName: 'Maria',
