@@ -1,0 +1,762 @@
+{
+  "nav": {
+    "home": "Home",
+    "experiences": "Experience",
+    "projects": "Projects",
+    "contact": "Contact",
+    "education": "Education",
+    "skills": "Skills",
+    "about": "About"
+  },
+  "home": {
+    "title": "Guilherme Gonçalves",
+    "subtitle": "Software Engineer · Mathematician · Teacher",
+    "presentation": {
+      "title": "Introduction",
+      "content": "I am a software engineer with 15 years of experience, starting in an R&D setting building embedded systems for data acquisition equipment and precision electromechanical devices, later migrating to web development. I studied Electrical Engineering for three years at UFSC (Federal University of Santa Catarina, Brazil) and switched to Mathematics in 2016 at the same university, obtaining a bachelor's degree in 2019. I currently work as a back-end engineer designing scalable cloud-based software, with an emphasis on Python, TypeScript and Java, and a particular interest in event-driven architectures, workflow engine designs and complexity analysis. I also work part-time as a private Maths teacher, mostly for undergraduate and secondary-school students."
+    },
+    "specialties": {
+      "title": "Specialties",
+      "items": [
+        "Event-driven architectures",
+        "Workflow engine design",
+        "Complexity analysis (Big-O)",
+        "Scalable back-end development (Python, TypeScript, Java)",
+        "Embedded systems and data acquisition",
+        "Mathematics teaching (Calculus, Analysis, Algebra)"
+      ]
+    },
+    "workRegime": {
+      "title": "Allocation / Working arrangements",
+      "content": "Available for service contracts (PJ) on a remote or hybrid basis. Experience with full-time and part-time remote work. Sole trader company: Guilherme L. Gonçalves Desenvolvimento de Sistemas Ltda. (CNPJ/ME: 44.867.072/0001-06)."
+    },
+    "hiring": {
+      "title": "Engagement",
+      "content": "Preference for service contracts (PJ). Open to discussing employment contracts in exceptional cases. Available for short-, medium- and long-term projects. Please get in touch via the contact form or the channels listed in the footer."
+    }
+  },
+  "experiences": {
+    "title": "Professional Experience",
+    "subtitle": "Detailed career history",
+    "menuLabel": "Period",
+    "allLabel": "All",
+    "yearRanges": [
+      {
+        "id": "2025",
+        "label": "2025",
+        "startYear": 2025,
+        "endYear": 2025
+      },
+      {
+        "id": "2020-present",
+        "label": "2020 — Present",
+        "startYear": 2020,
+        "endYear": 9999
+      },
+      {
+        "id": "2020-2021",
+        "label": "2020 — 2021",
+        "startYear": 2020,
+        "endYear": 2021
+      },
+      {
+        "id": "2019-2020",
+        "label": "2019 — 2020",
+        "startYear": 2019,
+        "endYear": 2020
+      },
+      {
+        "id": "2017-2019",
+        "label": "2017 — 2019",
+        "startYear": 2017,
+        "endYear": 2019
+      },
+      {
+        "id": "2011-2015",
+        "label": "2011 — 2015",
+        "startYear": 2011,
+        "endYear": 2015
+      }
+    ],
+    "items": [
+      {
+        "id": "mbras-2025",
+        "yearRangeId": "2025",
+        "startYear": 2025,
+        "endYear": 2025,
+        "company": "MBRAS Soluções Imobiliárias Ltda.",
+        "role": "Senior Back-end Software Engineer",
+        "period": "Oct/2025 — Dec/2025",
+        "location": "São Paulo/SP, Brazil",
+        "logoInitials": "MB",
+        "logoColor": "#2563eb",
+        "description": [
+          "Implementation of the back-end of a cloud platform for geolocation and address-based property search, plus IPTU (property tax) transfer between individual and corporate taxpayers.",
+          "Monolithic HTTP application server in Go (v1.25) using Domain-Driven Design (DDD).",
+          "RESTful API with go-chi/chi and go-playground/validator for request validation.",
+          "Data persistence layer with sqlc against PostgreSQL 17.",
+          "GitHub CI/CD: unit tests, govulncheck, gofumpt, Docker image sanity (dive), and interactive API docs via swagger/swag."
+        ],
+        "technologies": [
+          "PostgreSQL",
+          "Go",
+          "Python",
+          "FastAPI",
+          "ETL",
+          "Docker",
+          "Docker Compose",
+          "SQL",
+          "Azure"
+        ],
+        "logoSrc": "/logos/mbras.svg"
+      },
+      {
+        "id": "strokmatic-2025",
+        "yearRangeId": "2025",
+        "startYear": 2025,
+        "endYear": 2025,
+        "company": "Strokmatic Automação Industrial Ltda.",
+        "role": "Software Engineer (Full-stack)",
+        "period": "Feb/2025 — Jul/2025",
+        "location": "Joinville/SC, Brazil",
+        "logoInitials": "ST",
+        "logoColor": "#0f766e",
+        "description": [
+          "Platform applying convolutional neural networks to classify defects in bar images from a lamination (mechanical forming) process.",
+          "C++ (C++11): camera frame capture/post-processing and PLC signal acquisition.",
+          "TypeScript: Nest.js back-end and Angular front-end for reviewing defect inference results.",
+          "Python: classification models with PyTorch, Keras and TensorFlow; image filtering pipelines and GCS upload for Label Studio training data."
+        ],
+        "technologies": [
+          "Docker",
+          "Docker Compose",
+          "GCP",
+          "PostgreSQL",
+          "Python",
+          "C++",
+          "Node.js",
+          "NestJS",
+          "AngularJS",
+          "PyTorch",
+          "Keras",
+          "PLC",
+          "TypeScript"
+        ],
+        "logoSrc": "/logos/strokmatic.svg"
+      },
+      {
+        "id": "consulting-ltda",
+        "yearRangeId": "2020-present",
+        "startYear": 2020,
+        "endYear": 9999,
+        "company": "Guilherme L. Gonçalves Desenvolvimento de Sistemas Ltda.",
+        "role": "Software Engineering Consultant",
+        "period": "Jul/2020 — Present",
+        "location": "Brazil",
+        "logoInitials": "GG",
+        "logoColor": "#ffdb33",
+        "description": [
+          "FDTE / Lendico (now Proyu) — São Paulo/SP: BPM workflow engine as a Node.js microservice integrated into an event-driven distributed system (Python + Flask + PostgreSQL + RabbitMQ); CI pipeline standardisation on Bitbucket and peer-review culture.",
+          "Koper Software — Biguaçu/SC: planning the strangler refactor of the construction ERP back-end; mentoring trainee and junior developers in Python via peer review.",
+          "Payface Pagamentos — Florianópolis/SC: expanding the facial recognition algorithm to reduce noise from face masks; maintenance and new features on the NestJS/TypeScript back-end."
+        ],
+        "technologies": [
+          "PostgreSQL",
+          "Python",
+          "Flask",
+          "Tornado",
+          "RabbitMQ",
+          "Docker",
+          "Docker Compose",
+          "AWS",
+          "C++",
+          "Node.js",
+          "TypeScript",
+          "JavaScript",
+          "MongoDB",
+          "Nest.js"
+        ],
+        "logoSrc": "/logos/gg-ltda.svg"
+      },
+      {
+        "id": "neoprospecta",
+        "yearRangeId": "2020-2021",
+        "startYear": 2020,
+        "endYear": 2021,
+        "company": "Neoprospecta Pesquisa e Consultoria S.A.",
+        "role": "Software Engineer (Full-stack)",
+        "period": "Dec/2020 — Jul/2021",
+        "location": "Florianópolis/SC, Brazil",
+        "logoInitials": "NP",
+        "logoColor": "#7c3aed",
+        "description": [
+          "Cloud solution mapping genomic sequencing results into BI indicators for the food industry R&D clients.",
+          "Monolithic Python 3.8/Django 3 back-end; PostgreSQL 12; Angular 11 (TypeScript) front-end.",
+          "Redis caching and API throttling; CI/CD migration from App Engine to Cloud Run (GCP).",
+          "Liaison between Bioinformatics and Software Engineering; Scrum facilitation; mentoring interns and juniors."
+        ],
+        "technologies": [
+          "Docker",
+          "Docker Compose",
+          "GCP",
+          "PostgreSQL",
+          "Python",
+          "Django",
+          "DRF",
+          "AngularJS",
+          "Redis",
+          "Data Science",
+          "Genomic Sequencing"
+        ],
+        "logoSrc": "/logos/neoprospecta.svg"
+      },
+      {
+        "id": "certi",
+        "yearRangeId": "2019-2020",
+        "startYear": 2019,
+        "endYear": 2020,
+        "company": "Fundação CERTI",
+        "role": "Software Engineer (Full-stack)",
+        "period": "Feb/2019 — Jun/2020",
+        "location": "Florianópolis/SC, Brazil",
+        "logoInitials": "CE",
+        "logoColor": "#dc2626",
+        "description": [
+          "Guardian (Intelbras client): IoT asset-security platform — Apache Pulsar messaging layer; event-subscriber web service and RESTful API; React+Redux (Flux) SPA for internal support; Android app in Kotlin; PostgreSQL and Redis.",
+          "Shop-floor management platform (EPSON Brazil): cloud SPA to converge assembly-line data and manage work shifts at factories in the Manaus Free Trade Zone."
+        ],
+        "technologies": [
+          "Docker",
+          "Docker Compose",
+          "AWS",
+          "Tuya",
+          "IoT",
+          "Apache Pulsar",
+          "PostgreSQL",
+          "Python",
+          "Django",
+          "DRF",
+          "React",
+          "Redux",
+          "MQTT",
+          "Keycloak",
+          "Node.js",
+          "Redis"
+        ],
+        "logoSrc": "/logos/certi.svg"
+      },
+      {
+        "id": "lihai",
+        "yearRangeId": "2017-2019",
+        "startYear": 2017,
+        "endYear": 2019,
+        "company": "Lihai Tecnologia Ltda.",
+        "role": "R&D Staff Software Engineer (Back-end)",
+        "period": "Dec/2017 — Jan/2019",
+        "location": "Florianópolis/SC, Brazil",
+        "logoInitials": "LH",
+        "logoColor": "#ea580c",
+        "description": [
+          "Set up an R&D team; product recommendation module based on e-commerce usage profiles.",
+          "Reviewed and refactored web-scraping services (Python + Scrapy) for partner marketplace product data.",
+          "Product search engine: stochastic classifier (VGG19 CNN on product images) and deterministic NLP metrics (Levenshtein) on textual attributes."
+        ],
+        "technologies": [
+          "Docker",
+          "Docker Compose",
+          "AWS Lambda",
+          "PostgreSQL",
+          "MongoDB",
+          "Python",
+          "Scrapy",
+          "TensorFlow",
+          "Keras",
+          "NLTK",
+          "Kanban"
+        ],
+        "logoSrc": "/logos/lihai.svg"
+      },
+      {
+        "id": "lepten",
+        "yearRangeId": "2011-2015",
+        "startYear": 2011,
+        "endYear": 2015,
+        "company": "LEPTEN — UFSC",
+        "role": "Undergraduate Research Assistant (IC/CNPq)",
+        "period": "Oct/2011 — Aug/2015",
+        "location": "Florianópolis/SC, Brazil",
+        "logoInitials": "LP",
+        "logoColor": "#0891b2",
+        "description": [
+          "LabVIEW systems for transducer signal acquisition on a flat-plate solar collector test bench (EN12975-2 quasi-dynamic regime).",
+          "Renovated the laboratory meteorological station and restored export to the Baseline Surface Radiation Network (BSRN / Fraunhofer).",
+          "Embedded C++ system (PIC16F877A) for two-axis solar tracking (azimuth and elevation).",
+          "Contribution to LTCLIMA: web platform for meteorological time series (Java + Servlets + JPA/Hibernate)."
+        ],
+        "technologies": [
+          "C/C++",
+          "LabVIEW",
+          "Matlab",
+          "Python",
+          "Java",
+          "Modbus",
+          "Instrumentation",
+          "Data Acquisition",
+          "Solar Energy"
+        ],
+        "logoSrc": "/logos/lepten.svg"
+      }
+    ]
+  },
+  "projects": {
+    "title": "Personal Projects",
+    "items": [
+      {
+        "id": "empirical-tc",
+        "title": "Experimental determination of algorithmic time complexity",
+        "description": "Article published in the Better Programming newsletter (Medium) in 2022. Investigates an experimental method for determining the time complexity of algorithms in TypeScript running on Node.js. The proof-of-concept project evaluates time ratios for the classical merge-sort implementation.",
+        "articleUrl": "https://medium.com/better-programming/determining-time-complexity-of-algorithms-experimentally-4f844a5080ec",
+        "repoUrl": "https://github.com/guligon90/empirical-tc-ts",
+        "year": "2022"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Send a message. You will receive a confirmation e-mail.",
+    "form": {
+      "firstName": "First name",
+      "lastName": "Surname",
+      "email": "E-mail",
+      "organisation": "Organisation name (optional)",
+      "phone": "Telephone (optional)",
+      "countryCode": "Country code",
+      "message": "Message",
+      "submit": "Send message",
+      "submitting": "Sending…",
+      "success": "Message sent successfully! Please check your e-mail for confirmation.",
+      "error": "An error occurred while sending. Please try again."
+    },
+    "validation": {
+      "required": "This field is required",
+      "maxLength": "Maximum of {{max}} characters",
+      "email": "Invalid e-mail address",
+      "namePattern": "Invalid characters. Use letters, accents, hyphens, spaces and apostrophes."
+    },
+    "confirmationEmail": {
+      "subject": "Confirmation of receipt of your message",
+      "greeting": "Hello {{name}},",
+      "body": "We have received your message and will get back to you shortly. Thank you for getting in touch.",
+      "footer": "— Guilherme Gonçalves"
+    }
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "company": "Guilherme L. Gonçalves Desenvolvimento de Sistemas Ltda.",
+    "cnpj": "CNPJ/ME: 44.867.072/0001-06"
+  },
+  "theme": {
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System"
+  },
+  "language": {
+    "pt-BR": "Português (Brasil)",
+    "en-GB": "English (UK)"
+  },
+  "education": {
+    "title": "Education",
+    "subtitle": "Academic background, courses and certificates",
+    "menuLabel": "Section",
+    "academicLabel": "Academic education",
+    "coursesLabel": "Courses and certificates",
+    "periodLabel": "Period",
+    "allLabel": "All",
+    "academic": {
+      "yearRanges": [
+        {
+          "id": "2016-2019",
+          "label": "2016 — 2019",
+          "startYear": 2016,
+          "endYear": 2019
+        },
+        {
+          "id": "2007-2008",
+          "label": "2007 — 2008",
+          "startYear": 2007,
+          "endYear": 2008
+        },
+        {
+          "id": "2004-2007",
+          "label": "2004 — 2007",
+          "startYear": 2004,
+          "endYear": 2007
+        }
+      ],
+      "items": [
+        {
+          "id": "ufsc-math",
+          "yearRangeId": "2016-2019",
+          "startYear": 2016,
+          "endYear": 2019,
+          "institution": "Federal University of Santa Catarina",
+          "degree": "Bachelor in Mathematics and Scientific Computing",
+          "period": "Mar/2016 — Dec/2019",
+          "location": "Florianópolis/SC, Brazil",
+          "logoSrc": "/logos/ufsc.svg",
+          "description": [
+            "Undergraduate curriculum (2001 programme).",
+            "Graduate of the Advanced Mathematics Programme (PAM).",
+            "Teaching Assistant for Differential and Integral Calculus, Analytic Geometry, Linear Algebra and Differential Equations."
+          ],
+          "topics": [
+            "Numerical Methods",
+            "Mathematical Modeling",
+            "Computational Linear Algebra",
+            "Abstract Algebra",
+            "Real and Complex Analysis",
+            "Differential Equations"
+          ],
+          "credentialUrl": null
+        },
+        {
+          "id": "cefet-rac",
+          "yearRangeId": "2007-2008",
+          "startYear": 2007,
+          "endYear": 2008,
+          "institution": "Federal Centre for Technological Education of Santa Catarina",
+          "degree": "Heating, Ventilation and Air Conditioning Technology (HVAC)",
+          "period": "Feb/2007 — Nov/2008",
+          "location": "São José/SC, Brazil",
+          "logoSrc": "/logos/cefet.svg",
+          "description": [
+            "Curriculum internship (2008–2009) at LEPTEN — Solar Energy Laboratory, Mechanical Engineering, UFSC."
+          ],
+          "topics": [
+            "Applied Thermodynamics",
+            "Heat Transfer",
+            "Fluid Mechanics",
+            "Building Electrical Installations",
+            "HVAC Design",
+            "CAD"
+          ],
+          "credentialUrl": null
+        },
+        {
+          "id": "cefet-hs",
+          "yearRangeId": "2004-2007",
+          "startYear": 2004,
+          "endYear": 2007,
+          "institution": "Federal Centre for Technological Education of Santa Catarina",
+          "degree": "High School",
+          "period": "Feb/2004 — Nov/2007",
+          "location": "São José/SC, Brazil",
+          "logoSrc": "/logos/cefet.svg",
+          "description": [
+            "Student Union (2006–2007): member of the committee for integration between high-school and HVAC students."
+          ],
+          "topics": [
+            "Student Union"
+          ],
+          "credentialUrl": null
+        }
+      ]
+    },
+    "courses": {
+      "yearRanges": [
+        {
+          "id": "2026",
+          "label": "2026",
+          "startYear": 2026,
+          "endYear": 2026
+        },
+        {
+          "id": "2022",
+          "label": "2022",
+          "startYear": 2022,
+          "endYear": 2022
+        },
+        {
+          "id": "2016-2017",
+          "label": "2016 — 2017",
+          "startYear": 2016,
+          "endYear": 2017
+        },
+        {
+          "id": "2012",
+          "label": "2012",
+          "startYear": 2012,
+          "endYear": 2012
+        }
+      ],
+      "items": [
+        {
+          "id": "udesc-ai",
+          "yearRangeId": "2026",
+          "startYear": 2026,
+          "endYear": 2026,
+          "institution": "UDESC — PPGEEL/GCS",
+          "degree": "Artificial Intelligence and Machine Learning applied to Power Systems",
+          "period": "2026",
+          "location": "Joinville/SC, Brazil",
+          "logoSrc": "/logos/udesc.svg",
+          "description": [
+            "Graduate Programme in Electrical Engineering."
+          ],
+          "topics": [
+            "AI",
+            "Machine Learning",
+            "Power Systems"
+          ],
+          "credentialUrl": "https://tinyurl.com/2acjbtes"
+        },
+        {
+          "id": "efset-c2",
+          "yearRangeId": "2022",
+          "startYear": 2022,
+          "endYear": 2022,
+          "institution": "EF SET",
+          "degree": "EF SET 50 — English Proficiency Test (C2 level)",
+          "period": "2022",
+          "location": "Online",
+          "logoSrc": "/logos/efset.svg",
+          "description": [
+            "English proficiency certification at C2 level."
+          ],
+          "topics": [
+            "English C2"
+          ],
+          "credentialUrl": "https://cert.efset.org/1Gpuan"
+        },
+        {
+          "id": "ufsc-monitoria-2017-2",
+          "yearRangeId": "2016-2017",
+          "startYear": 2017,
+          "endYear": 2017,
+          "institution": "UFSC — CFM — Department of Mathematics",
+          "degree": "Teaching Assistant Certificate — Semester 2017/2",
+          "period": "2017",
+          "location": "Florianópolis/SC, Brazil",
+          "logoSrc": "/logos/ufsc.svg",
+          "description": [
+            "Teaching assistantship in mathematics courses."
+          ],
+          "topics": [
+            "Teaching",
+            "Calculus"
+          ],
+          "credentialUrl": "https://tinyurl.com/56rdvf3s"
+        },
+        {
+          "id": "ufsc-monitoria-2017-1",
+          "yearRangeId": "2016-2017",
+          "startYear": 2017,
+          "endYear": 2017,
+          "institution": "UFSC — CFM — Department of Mathematics",
+          "degree": "Teaching Assistant Certificate — Semester 2017/1",
+          "period": "2017",
+          "location": "Florianópolis/SC, Brazil",
+          "logoSrc": "/logos/ufsc.svg",
+          "description": [
+            "Teaching assistantship in mathematics courses."
+          ],
+          "topics": [
+            "Teaching",
+            "Calculus"
+          ],
+          "credentialUrl": "https://tinyurl.com/4fjywn45"
+        },
+        {
+          "id": "ufsc-monitoria-2016-2",
+          "yearRangeId": "2016-2017",
+          "startYear": 2016,
+          "endYear": 2016,
+          "institution": "UFSC — CFM — Department of Mathematics",
+          "degree": "Teaching Assistant Certificate — Semester 2016/2",
+          "period": "2016",
+          "location": "Florianópolis/SC, Brazil",
+          "logoSrc": "/logos/ufsc.svg",
+          "description": [
+            "Teaching assistantship in mathematics courses."
+          ],
+          "topics": [
+            "Teaching",
+            "Calculus"
+          ],
+          "credentialUrl": "https://tinyurl.com/23hrbbsw"
+        },
+        {
+          "id": "ufsc-monitoria-2016-1",
+          "yearRangeId": "2016-2017",
+          "startYear": 2016,
+          "endYear": 2016,
+          "institution": "UFSC — CFM — Department of Mathematics",
+          "degree": "Teaching Assistant Certificate — Semester 2016/1",
+          "period": "2016",
+          "location": "Florianópolis/SC, Brazil",
+          "logoSrc": "/logos/ufsc.svg",
+          "description": [
+            "Teaching assistantship in mathematics courses."
+          ],
+          "topics": [
+            "Teaching",
+            "Calculus"
+          ],
+          "credentialUrl": "https://tinyurl.com/kpf35ttr"
+        },
+        {
+          "id": "ufsc-audio",
+          "yearRangeId": "2012",
+          "startYear": 2012,
+          "endYear": 2012,
+          "institution": "UFSC — EEL — Department of Electrical Engineering",
+          "degree": "Electronic Filters, Analog and Digital Effects",
+          "period": "2012",
+          "location": "Florianópolis/SC, Brazil",
+          "logoSrc": "/logos/ufsc.svg",
+          "description": [
+            "Extension course on audio filters and effects."
+          ],
+          "topics": [
+            "Audio",
+            "Filters",
+            "Electronics"
+          ],
+          "credentialUrl": "https://tinyurl.com/46zjjwhu"
+        }
+      ]
+    },
+    "credentialLabel": "View credential ↗"
+  },
+  "skills": {
+    "title": "Skills and interests",
+    "subtitle": "Languages, programming languages, and professional and personal interests",
+    "sections": [
+      {
+        "id": "spoken-languages",
+        "title": "Languages",
+        "items": [
+          {
+            "name": "Portuguese",
+            "level": "Native"
+          },
+          {
+            "name": "English",
+            "level": "C2"
+          },
+          {
+            "name": "German (Hochdeutsch)",
+            "level": "B2"
+          },
+          {
+            "name": "Russian",
+            "level": "A1"
+          }
+        ]
+      },
+      {
+        "id": "programming",
+        "title": "Programming languages",
+        "items": [
+          {
+            "name": "Python",
+            "level": "Advanced"
+          },
+          {
+            "name": "TypeScript",
+            "level": "Advanced"
+          },
+          {
+            "name": "C/C++",
+            "level": "Intermediate"
+          },
+          {
+            "name": "Go",
+            "level": "Intermediate"
+          },
+          {
+            "name": "Java",
+            "level": "Intermediate"
+          }
+        ]
+      },
+      {
+        "id": "professional-interests",
+        "title": "Professional interests",
+        "groups": [
+          {
+            "id": "math-teaching",
+            "title": "Mathematics teaching",
+            "items": [
+              "Differential and Integral Calculus",
+              "Analysis",
+              "Abstract Algebra",
+              "Linear Algebra"
+            ]
+          },
+          {
+            "id": "scientific-computing",
+            "title": "Scientific computing",
+            "items": [
+              "Asymptotic analysis (Big-O)",
+              "Temporal and spatial complexity of algorithms",
+              "Experimental methods for complexity estimation"
+            ]
+          },
+          {
+            "id": "design-patterns",
+            "title": "Software design patterns",
+            "items": [
+              "Event-driven architectures",
+              "Workflow engine design",
+              "Scalable and resilient design patterns"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "personal-interests",
+        "title": "Personal interests",
+        "items": [
+          "Amateur cycling",
+          "Freehand drawing (human anatomy and architectural)",
+          "Bakery (bread recipes)",
+          "Study of languages",
+          "Mathematics",
+          "Analog electronics",
+          "Music (piano)"
+        ]
+      }
+    ]
+  },
+  "about": {
+    "title": "About",
+    "subtitle": "About the author and this application",
+    "photoAlt": "Portrait of Guilherme Gonçalves",
+    "socialGithub": "GitHub",
+    "socialMedium": "Medium",
+    "socialLinkedin": "LinkedIn",
+    "developedBy": "Developed by",
+    "developerName": "Guilherme Gonçalves",
+    "mainLanguage": "Primary language",
+    "runtime": "Runtime",
+    "designPattern": "Design pattern",
+    "designPatternValue": "Flux (actions → stores → views), implemented with Zustand",
+    "mainLibraries": "Main libraries",
+    "libraries": [
+      "Next.js 15 (App Router, static export)",
+      "React 19",
+      "Zustand 5 (state management)",
+      "Yup (schema validation)",
+      "react-hook-form + @hookform/resolvers",
+      "Tailwind CSS + Neobrutalism",
+      "next-themes (light / dark / system)",
+      "lucide-react (icons)"
+    ],
+    "architectureNote": "Clear separation between reusable components and pages; i18n pt-BR / en-GB; unit tests with Jest."
+  },
+  "loading": {
+    "default": "Loading...",
+    "navigating": "Loading..."
+  }
+}

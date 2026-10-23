@@ -1,0 +1,762 @@
+{
+  "nav": {
+    "home": "Início",
+    "experiences": "Experiências",
+    "projects": "Projetos",
+    "contact": "Contato",
+    "education": "Formação",
+    "skills": "Habilidades",
+    "about": "Sobre"
+  },
+  "home": {
+    "title": "Guilherme Gonçalves",
+    "subtitle": "Engenheiro de Software · Matemático · Professor",
+    "presentation": {
+      "title": "Apresentação",
+      "content": "Sou engenheiro de software com 15 anos de experiência, iniciando em ambiente de P&D na construção de sistemas embarcados para equipamentos de aquisição de dados e dispositivos eletromecânicos de precisão, migrando posteriormente para o desenvolvimento web. Estudei Engenharia Elétrica por três anos na UFSC e, em 2016, mudei para Matemática na mesma universidade, obtendo o bacharelado em 2019. Atualmente atuo como engenheiro back-end desenhando software escalável baseado em nuvem, com ênfase em Python, TypeScript e Java, e interesse particular em arquiteturas orientadas a eventos, projetos de motores de workflow e análise de complexidade. Trabalho a tempo parcial como professor particular de Matemática, sobretudo para alunos de graduação e ensino médio."
+    },
+    "specialties": {
+      "title": "Especialidades",
+      "items": [
+        "Arquitecturas orientadas a eventos",
+        "Desenho de motores de workflow",
+        "Análise de complexidade (Big-O)",
+        "Desenvolvimento back-end escalável (Python, TypeScript, Java)",
+        "Sistemas embarcados e aquisição de dados",
+        "Ensino de Matemática (Cálculo, Análise, Álgebra)"
+      ]
+    },
+    "workRegime": {
+      "title": "Alocação / Regime de Trabalho",
+      "content": "Disponível para contratos de prestação de serviços (PJ) em regime remoto ou híbrido. Experiência em trabalho remoto full-time e part-time. Empresa individual: Guilherme L. Gonçalves Desenvolvimento de Sistemas Ltda. (CNPJ/ME: 44.867.072/0001-06)."
+    },
+    "hiring": {
+      "title": "Contratação",
+      "content": "Preferência por contratos de prestação de serviços (PJ). Aberto a discussões sobre regime CLT em casos excepcionais. Disponibilidade para projetos de curta, média e longa duração. Entre em contato pelo formulário de contato ou dos canais listados no rodapé."
+    }
+  },
+  "experiences": {
+    "title": "Experiências Profissionais",
+    "subtitle": "Histórico detalhado de trajetória profissional",
+    "menuLabel": "Período",
+    "allLabel": "Todos",
+    "yearRanges": [
+      {
+        "id": "2025",
+        "label": "2025",
+        "startYear": 2025,
+        "endYear": 2025
+      },
+      {
+        "id": "2020-present",
+        "label": "2020 — Presente",
+        "startYear": 2020,
+        "endYear": 9999
+      },
+      {
+        "id": "2020-2021",
+        "label": "2020 — 2021",
+        "startYear": 2020,
+        "endYear": 2021
+      },
+      {
+        "id": "2019-2020",
+        "label": "2019 — 2020",
+        "startYear": 2019,
+        "endYear": 2020
+      },
+      {
+        "id": "2017-2019",
+        "label": "2017 — 2019",
+        "startYear": 2017,
+        "endYear": 2019
+      },
+      {
+        "id": "2011-2015",
+        "label": "2011 — 2015",
+        "startYear": 2011,
+        "endYear": 2015
+      }
+    ],
+    "items": [
+      {
+        "id": "mbras-2025",
+        "yearRangeId": "2025",
+        "startYear": 2025,
+        "endYear": 2025,
+        "company": "MBRAS Soluções Imobiliárias Ltda.",
+        "role": "Engenheiro de Software (Back-end)",
+        "period": "Out/2025 — Dez/2025",
+        "location": "São Paulo/SP, Brasil",
+        "logoInitials": "MB",
+        "logoColor": "#2563eb",
+        "description": [
+          "Implementação do back-end de uma plataforma em nuvem para geolocalização e pesquisa por endereço e atributos de propriedades imobiliárias, além de facilitar a transferência de IPTU entre contribuintes (PF e PJ).",
+          "Servidor HTTP monolítico em Go (v1.25) com padrão DDD (Domain-Driven Design).",
+          "API RESTful com go-chi/chi e validação de requisições com go-playground/validator.",
+          "Camada de persistência com sqlc sobre PostgreSQL 17.",
+          "CI/CD no GitHub: testes unitários, govulncheck, gofumpt, análise de imagem Docker (dive) e documentação interativa via swagger/swag."
+        ],
+        "technologies": [
+          "PostgreSQL",
+          "Go",
+          "Python",
+          "FastAPI",
+          "ETL",
+          "Docker",
+          "Docker Compose",
+          "SQL",
+          "Azure"
+        ],
+        "logoSrc": "/logos/mbras.svg"
+      },
+      {
+        "id": "strokmatic-2025",
+        "yearRangeId": "2025",
+        "startYear": 2025,
+        "endYear": 2025,
+        "company": "Strokmatic Automação Industrial Ltda.",
+        "role": "Engenheiro de Software (Full-stack)",
+        "period": "Fev/2025 — Jul/2025",
+        "location": "Joinville/SC, Brasil",
+        "logoInitials": "ST",
+        "logoColor": "#0f766e",
+        "description": [
+          "Construção de plataforma com redes neurais convolucionais para classificar defeitos em imagens de barras do processo de laminação.",
+          "C++ (C++11): captura e pós-processamento de frames de câmeras e aquisição de sinais de PLCs.",
+          "TypeScript: back-end Nest.js e front-end Angular para visualização dos resultados de inferência.",
+          "Python: modelos com PyTorch, Keras e TensorFlow; pipelines de filtragem e upload de imagens para buckets GCS e Label Studio."
+        ],
+        "technologies": [
+          "Docker",
+          "Docker Compose",
+          "GCP",
+          "PostgreSQL",
+          "Python",
+          "C++",
+          "Node.js",
+          "NestJS",
+          "AngularJS",
+          "PyTorch",
+          "Keras",
+          "PLC",
+          "TypeScript"
+        ],
+        "logoSrc": "/logos/strokmatic.svg"
+      },
+      {
+        "id": "consulting-ltda",
+        "yearRangeId": "2020-present",
+        "startYear": 2020,
+        "endYear": 9999,
+        "company": "Guilherme L. Gonçalves Desenvolvimento de Sistemas Ltda.",
+        "role": "Consultor em Desenvolvimento de Software",
+        "period": "Jul/2020 — Presente",
+        "location": "Brasil",
+        "logoInitials": "GG",
+        "logoColor": "#ffdb33",
+        "description": [
+          "FDTE / Lendico (atual Proyu) — São Paulo/SP: desenvolvimento de workflow engine com BPM como microserviço Node.js, integrado a sistema distribuído orientado a eventos (Python + Flask + PostgreSQL + RabbitMQ); padronização de pipelines CI no Bitbucket e cultura de peer review.",
+          "Koper Software — Biguaçu/SC: planeamento do estrangulamento (strangler) do back-end ERP de construção civil; mentoria de trainees e júniores em Python via peer review.",
+          "Payface Pagamentos — Florianópolis/SC: expansão do algoritmo de reconhecimento facial (redução de ruído por máscaras); manutenção e novas funcionalidades no back-end (Node.js + TypeScript + NestJS)."
+        ],
+        "technologies": [
+          "PostgreSQL",
+          "Python",
+          "Flask",
+          "Tornado",
+          "RabbitMQ",
+          "Docker",
+          "Docker Compose",
+          "AWS",
+          "C++",
+          "Node.js",
+          "TypeScript",
+          "JavaScript",
+          "MongoDB",
+          "Nest.js"
+        ],
+        "logoSrc": "/logos/gg-ltda.svg"
+      },
+      {
+        "id": "neoprospecta",
+        "yearRangeId": "2020-2021",
+        "startYear": 2020,
+        "endYear": 2021,
+        "company": "Neoprospecta Pesquisa e Consultoria S.A.",
+        "role": "Engenheiro de Software (Full-stack)",
+        "period": "Dez/2020 — Jul/2021",
+        "location": "Florianópolis/SC, Brasil",
+        "logoInitials": "NP",
+        "logoColor": "#7c3aed",
+        "description": [
+          "Desenvolvimento e manutenção da solução em nuvem que mapeia resultados de sequenciamento genómico em indicadores de BI para a indústria de alimentos.",
+          "Back-end monolítico em Python 3.8 com Django 3; persistência em PostgreSQL 12; front-end Angular 11 (TypeScript).",
+          "Caching e API throttling com Redis; migração de CI/CD de App Engine para Cloud Run (GCP).",
+          "Intermediação entre Bioinformática e Engenharia de Software; gestão Scrum; mentoria de estagiários e júniores."
+        ],
+        "technologies": [
+          "Docker",
+          "Docker Compose",
+          "GCP",
+          "PostgreSQL",
+          "Python",
+          "Django",
+          "DRF",
+          "AngularJS",
+          "Redis",
+          "Ciência de Dados",
+          "Sequenciamento Genómico"
+        ],
+        "logoSrc": "/logos/neoprospecta.svg"
+      },
+      {
+        "id": "certi",
+        "yearRangeId": "2019-2020",
+        "startYear": 2019,
+        "endYear": 2020,
+        "company": "Fundação CERTI",
+        "role": "Engenheiro de Software (Full-stack)",
+        "period": "Fev/2019 — Jun/2020",
+        "location": "Florianópolis/SC, Brasil",
+        "logoInitials": "CE",
+        "logoColor": "#dc2626",
+        "description": [
+          "Guardian (cliente Intelbras): plataforma IoT de segurança patrimonial B2B/B2C — camada de mensageria com Apache Pulsar; webservice subscritor de eventos e API RESTful; SPA React+Redux (Flux) para suporte interno; app Android em Kotlin; PostgreSQL e Redis.",
+          "Plataforma de chão-de-fábrica (cliente EPSON Brasil): SPA em nuvem para convergência de dados de linhas de montagem e gestão de turnos nas fábricas da Zona Franca de Manaus."
+        ],
+        "technologies": [
+          "Docker",
+          "Docker Compose",
+          "AWS",
+          "Tuya",
+          "IoT",
+          "Apache Pulsar",
+          "PostgreSQL",
+          "Python",
+          "Django",
+          "DRF",
+          "React",
+          "Redux",
+          "MQTT",
+          "Keycloak",
+          "Node.js",
+          "Redis"
+        ],
+        "logoSrc": "/logos/certi.svg"
+      },
+      {
+        "id": "lihai",
+        "yearRangeId": "2017-2019",
+        "startYear": 2017,
+        "endYear": 2019,
+        "company": "Lihai Tecnologia Ltda.",
+        "role": "Engenheiro de Software (P&D, Back-end)",
+        "period": "Dez/2017 — Jan/2019",
+        "location": "Florianópolis/SC, Brasil",
+        "logoInitials": "LH",
+        "logoColor": "#ea580c",
+        "description": [
+          "Estabelecimento de time de P&D; módulo de recomendação de produtos baseado no perfil de uso da plataforma de e-commerce.",
+          "Revisão e refatoração de serviços de web scraping (Python + Scrapy) para mineração de produtos em parceiros.",
+          "Motor de busca de produtos: classificador estocástico (rede VGG19) sobre imagens e classificador determinístico com métricas NLP (Levenshtein) sobre atributos textuais."
+        ],
+        "technologies": [
+          "Docker",
+          "Docker Compose",
+          "AWS Lambda",
+          "PostgreSQL",
+          "MongoDB",
+          "Python",
+          "Scrapy",
+          "TensorFlow",
+          "Keras",
+          "NLTK",
+          "Kanban"
+        ],
+        "logoSrc": "/logos/lihai.svg"
+      },
+      {
+        "id": "lepten",
+        "yearRangeId": "2011-2015",
+        "startYear": 2011,
+        "endYear": 2015,
+        "company": "LEPTEN — UFSC",
+        "role": "Bolsista de Iniciação Científica (IC/CNPq)",
+        "period": "Out/2011 — Ago/2015",
+        "location": "Florianópolis/SC, Brasil",
+        "logoInitials": "LP",
+        "logoColor": "#0891b2",
+        "description": [
+          "Sistemas LabVIEW para aquisição de sinais de transdutores em bancada de coletores solares de placa plana (norma EN12975-2, regime quase-dinâmico).",
+          "Renovação da estação meteorológica e exportação de variáveis para a Baseline Surface Radiation Network (BSRN / Fraunhofer).",
+          "Sistema embarcado em C++ (PIC16F877A) para seguimento solar em dois eixos (azimute e elevação).",
+          "Participação no LTCLIMA: plataforma web de séries temporais da estação (Java + Servlets + JPA/Hibernate)."
+        ],
+        "technologies": [
+          "C/C++",
+          "LabVIEW",
+          "Matlab",
+          "Python",
+          "Java",
+          "Modbus",
+          "Instrumentação",
+          "Aquisição de Dados",
+          "Energia Solar"
+        ],
+        "logoSrc": "/logos/lepten.svg"
+      }
+    ]
+  },
+  "projects": {
+    "title": "Projetos Pessoais",
+    "items": [
+      {
+        "id": "empirical-tc",
+        "title": "Determinação experimental de complexidade temporal de algoritmos",
+        "description": "Artigo publicado na newsletter Better Programming (Medium) em 2022. Investiga um método experimental para determinação de complexidade temporal de algoritmos em TypeScript, executando em Node.js. O projeto de prova de conceito avalia razões de tempo para a implementação clássica do merge sort.",
+        "articleUrl": "https://medium.com/better-programming/determining-time-complexity-of-algorithms-experimentally-4f844a5080ec",
+        "repoUrl": "https://github.com/guligon90/empirical-tc-ts",
+        "year": "2022"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contato",
+    "subtitle": "Envie uma mensagem. Receberá um e-mail de confirmação.",
+    "form": {
+      "firstName": "Nome",
+      "lastName": "Sobrenome",
+      "email": "E-mail",
+      "organisation": "Nome da organização (opcional)",
+      "phone": "Telefone (opcional)",
+      "countryCode": "Código do país",
+      "message": "Mensagem",
+      "submit": "Enviar mensagem",
+      "submitting": "Enviando...",
+      "success": "Mensagem enviada com sucesso! Verifique o seu e-mail para a confirmação.",
+      "error": "Ocorreu um erro ao enviar. Tente novamente."
+    },
+    "validation": {
+      "required": "Campo obrigatório",
+      "maxLength": "Máximo de {{max}} caracteres",
+      "email": "E-mail inválido",
+      "namePattern": "Caracteres inválidos. Use letras, acentos, hífens, espaços e apóstrofos."
+    },
+    "confirmationEmail": {
+      "subject": "Confirmação de recepção da sua mensagem",
+      "greeting": "Olá {{name}},",
+      "body": "Recebemos a sua mensagem e entraremos em contato em breve. Obrigado por se dirigir a nós.",
+      "footer": "— Guilherme Gonçalves"
+    }
+  },
+  "footer": {
+    "rights": "Todos os direitos reservados.",
+    "company": "Guilherme L. Gonçalves Desenvolvimento de Sistemas Ltda.",
+    "cnpj": "CNPJ/ME: 44.867.072/0001-06"
+  },
+  "theme": {
+    "light": "Claro",
+    "dark": "Escuro",
+    "system": "Sistema"
+  },
+  "language": {
+    "pt-BR": "Português (Brasil)",
+    "en-GB": "English (UK)"
+  },
+  "education": {
+    "title": "Formação",
+    "subtitle": "Formação acadêmica, cursos e certificados",
+    "menuLabel": "Seção",
+    "academicLabel": "Formação acadêmica",
+    "coursesLabel": "Cursos e certificados",
+    "periodLabel": "Período",
+    "allLabel": "Todos",
+    "academic": {
+      "yearRanges": [
+        {
+          "id": "2016-2019",
+          "label": "2016 — 2019",
+          "startYear": 2016,
+          "endYear": 2019
+        },
+        {
+          "id": "2007-2008",
+          "label": "2007 — 2008",
+          "startYear": 2007,
+          "endYear": 2008
+        },
+        {
+          "id": "2004-2007",
+          "label": "2004 — 2007",
+          "startYear": 2004,
+          "endYear": 2007
+        }
+      ],
+      "items": [
+        {
+          "id": "ufsc-math",
+          "yearRangeId": "2016-2019",
+          "startYear": 2016,
+          "endYear": 2019,
+          "institution": "Universidade Federal de Santa Catarina",
+          "degree": "Bacharel em Matemática e Computação Científica",
+          "period": "Mar/2016 — Dez/2019",
+          "location": "Florianópolis/SC, Brasil",
+          "logoSrc": "/logos/ufsc.svg",
+          "description": [
+            "Currículo da graduação de 2001.",
+            "Egresso do PAM — Programa Avançado de Matemática.",
+            "Monitoria de Cálculo Diferencial e Integral, Geometria Analítica, Álgebra Linear e Equações Diferenciais, com apoio pedagógico aos alunos regularmente matriculados."
+          ],
+          "topics": [
+            "Métodos Numéricos",
+            "Modelagem Matemática",
+            "Álgebra Linear Computacional",
+            "Álgebra",
+            "Análise Real e Complexa",
+            "Equações Diferenciais"
+          ],
+          "credentialUrl": null
+        },
+        {
+          "id": "cefet-rac",
+          "yearRangeId": "2007-2008",
+          "startYear": 2007,
+          "endYear": 2008,
+          "institution": "Centro Federal de Educação Tecnológica de Santa Catarina",
+          "degree": "Técnico em Refrigeração e Climatização (RAC)",
+          "period": "Fev/2007 — Nov/2008",
+          "location": "São José/SC, Brasil",
+          "logoSrc": "/logos/cefet.svg",
+          "description": [
+            "Estágio curricular (2008–2009) no Laboratório de Engenharia de Processos de Conversão e Tecnologia de Energia — LEPTEN (Engenharia Mecânica, UFSC)."
+          ],
+          "topics": [
+            "Termodinâmica",
+            "Transferência de Calor",
+            "Mecânica dos Fluidos",
+            "Instalações Elétricas Prediais",
+            "Projetos de SRAC",
+            "CAD"
+          ],
+          "credentialUrl": null
+        },
+        {
+          "id": "cefet-hs",
+          "yearRangeId": "2004-2007",
+          "startYear": 2004,
+          "endYear": 2007,
+          "institution": "Centro Federal de Educação Tecnológica de Santa Catarina",
+          "degree": "Ensino Médio Regular",
+          "period": "Fev/2004 — Nov/2007",
+          "location": "São José/SC, Brasil",
+          "logoSrc": "/logos/cefet.svg",
+          "description": [
+            "Grêmio Estudantil (2006–2007): membro do núcleo de integração com o curso técnico de Refrigeração e Climatização (RAC)."
+          ],
+          "topics": [
+            "Grêmio Estudantil"
+          ],
+          "credentialUrl": null
+        }
+      ]
+    },
+    "courses": {
+      "yearRanges": [
+        {
+          "id": "2026",
+          "label": "2026",
+          "startYear": 2026,
+          "endYear": 2026
+        },
+        {
+          "id": "2022",
+          "label": "2022",
+          "startYear": 2022,
+          "endYear": 2022
+        },
+        {
+          "id": "2016-2017",
+          "label": "2016 — 2017",
+          "startYear": 2016,
+          "endYear": 2017
+        },
+        {
+          "id": "2012",
+          "label": "2012",
+          "startYear": 2012,
+          "endYear": 2012
+        }
+      ],
+      "items": [
+        {
+          "id": "udesc-ai",
+          "yearRangeId": "2026",
+          "startYear": 2026,
+          "endYear": 2026,
+          "institution": "UDESC — PPGEEL/GCS",
+          "degree": "Inteligência Artificial e Aprendizado de Máquina Aplicados a Sistemas de Potência",
+          "period": "2026",
+          "location": "Joinville/SC, Brasil",
+          "logoSrc": "/logos/udesc.svg",
+          "description": [
+            "Programa de Pós-Graduação em Engenharia Elétrica."
+          ],
+          "topics": [
+            "IA",
+            "Aprendizado de Máquina",
+            "Sistemas de Potência"
+          ],
+          "credentialUrl": "https://tinyurl.com/2acjbtes"
+        },
+        {
+          "id": "efset-c2",
+          "yearRangeId": "2022",
+          "startYear": 2022,
+          "endYear": 2022,
+          "institution": "EF SET",
+          "degree": "EF SET 50 — Teste de Proficiência em Inglês (Nível C2)",
+          "period": "2022",
+          "location": "Online",
+          "logoSrc": "/logos/efset.svg",
+          "description": [
+            "Certificação de proficiência em inglês no nível C2."
+          ],
+          "topics": [
+            "Inglês C2"
+          ],
+          "credentialUrl": "https://cert.efset.org/1Gpuan"
+        },
+        {
+          "id": "ufsc-monitoria-2017-2",
+          "yearRangeId": "2016-2017",
+          "startYear": 2017,
+          "endYear": 2017,
+          "institution": "UFSC — CFM — Departamento de Matemática",
+          "degree": "Certificado de monitoria — Semestre 2017/2",
+          "period": "2017",
+          "location": "Florianópolis/SC, Brasil",
+          "logoSrc": "/logos/ufsc.svg",
+          "description": [
+            "Monitoria em disciplinas de matemática."
+          ],
+          "topics": [
+            "Monitoria",
+            "Cálculo"
+          ],
+          "credentialUrl": "https://tinyurl.com/56rdvf3s"
+        },
+        {
+          "id": "ufsc-monitoria-2017-1",
+          "yearRangeId": "2016-2017",
+          "startYear": 2017,
+          "endYear": 2017,
+          "institution": "UFSC — CFM — Departamento de Matemática",
+          "degree": "Certificado de monitoria — Semestre 2017/1",
+          "period": "2017",
+          "location": "Florianópolis/SC, Brasil",
+          "logoSrc": "/logos/ufsc.svg",
+          "description": [
+            "Monitoria em disciplinas de matemática."
+          ],
+          "topics": [
+            "Monitoria",
+            "Cálculo"
+          ],
+          "credentialUrl": "https://tinyurl.com/4fjywn45"
+        },
+        {
+          "id": "ufsc-monitoria-2016-2",
+          "yearRangeId": "2016-2017",
+          "startYear": 2016,
+          "endYear": 2016,
+          "institution": "UFSC — CFM — Departamento de Matemática",
+          "degree": "Certificado de monitoria — Semestre 2016/2",
+          "period": "2016",
+          "location": "Florianópolis/SC, Brasil",
+          "logoSrc": "/logos/ufsc.svg",
+          "description": [
+            "Monitoria em disciplinas de matemática."
+          ],
+          "topics": [
+            "Monitoria",
+            "Cálculo"
+          ],
+          "credentialUrl": "https://tinyurl.com/23hrbbsw"
+        },
+        {
+          "id": "ufsc-monitoria-2016-1",
+          "yearRangeId": "2016-2017",
+          "startYear": 2016,
+          "endYear": 2016,
+          "institution": "UFSC — CFM — Departamento de Matemática",
+          "degree": "Certificado de monitoria — Semestre 2016/1",
+          "period": "2016",
+          "location": "Florianópolis/SC, Brasil",
+          "logoSrc": "/logos/ufsc.svg",
+          "description": [
+            "Monitoria em disciplinas de matemática."
+          ],
+          "topics": [
+            "Monitoria",
+            "Cálculo"
+          ],
+          "credentialUrl": "https://tinyurl.com/kpf35ttr"
+        },
+        {
+          "id": "ufsc-audio",
+          "yearRangeId": "2012",
+          "startYear": 2012,
+          "endYear": 2012,
+          "institution": "UFSC — EEL — Departamento de Engenharia Elétrica",
+          "degree": "Filtros e Efeitos de Áudio Analógicos e Digitais",
+          "period": "2012",
+          "location": "Florianópolis/SC, Brasil",
+          "logoSrc": "/logos/ufsc.svg",
+          "description": [
+            "Curso de extensão em filtros e efeitos de áudio."
+          ],
+          "topics": [
+            "Áudio",
+            "Filtros",
+            "Eletrônica"
+          ],
+          "credentialUrl": "https://tinyurl.com/46zjjwhu"
+        }
+      ]
+    },
+    "credentialLabel": "Ver certificado ↗"
+  },
+  "skills": {
+    "title": "Habilidades e interesses",
+    "subtitle": "Idiomas, linguagens de programação e interesses profissionais e pessoais",
+    "sections": [
+      {
+        "id": "spoken-languages",
+        "title": "Idiomas",
+        "items": [
+          {
+            "name": "Português",
+            "level": "Nativo"
+          },
+          {
+            "name": "Inglês",
+            "level": "C2"
+          },
+          {
+            "name": "Alemão (Hochdeutsch)",
+            "level": "B2"
+          },
+          {
+            "name": "Russo",
+            "level": "A1"
+          }
+        ]
+      },
+      {
+        "id": "programming",
+        "title": "Linguagens de programação",
+        "items": [
+          {
+            "name": "Python",
+            "level": "Avançado"
+          },
+          {
+            "name": "TypeScript",
+            "level": "Avançado"
+          },
+          {
+            "name": "C/C++",
+            "level": "Intermediário"
+          },
+          {
+            "name": "Go",
+            "level": "Intermediário"
+          },
+          {
+            "name": "Java",
+            "level": "Intermediário"
+          }
+        ]
+      },
+      {
+        "id": "professional-interests",
+        "title": "Interesses profissionais",
+        "groups": [
+          {
+            "id": "math-teaching",
+            "title": "Ensino de Matemática",
+            "items": [
+              "Cálculo Diferencial e Integral",
+              "Análise",
+              "Álgebra Abstrata",
+              "Álgebra Linear"
+            ]
+          },
+          {
+            "id": "scientific-computing",
+            "title": "Computação Científica",
+            "items": [
+              "Análise assintótica (Big-O)",
+              "Determinação de complexidade temporal e espacial de algoritmos",
+              "Métodos experimentais para estimativa de complexidade"
+            ]
+          },
+          {
+            "id": "design-patterns",
+            "title": "Padrões de Projeto de Software",
+            "items": [
+              "Arquiteturas orientadas a eventos",
+              "Projeto de mecanismos de motores de workflow",
+              "Padrões de desenho escaláveis e resilientes"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "personal-interests",
+        "title": "Interesses pessoais",
+        "items": [
+          "Ciclismo amador",
+          "Desenho à mão livre (anatomia humana e arquitetônico)",
+          "Padaria (receitas de pães)",
+          "Estudo de idiomas",
+          "Matemática",
+          "Eletrônica",
+          "Música (piano)"
+        ]
+      }
+    ]
+  },
+  "about": {
+    "title": "Sobre",
+    "subtitle": "Informações sobre o autor e sobre esta aplicação",
+    "photoAlt": "Retrato de Guilherme Gonçalves",
+    "socialGithub": "GitHub",
+    "socialMedium": "Medium",
+    "socialLinkedin": "LinkedIn",
+    "developedBy": "Desenvolvido por",
+    "developerName": "Guilherme Gonçalves",
+    "mainLanguage": "Linguagem principal",
+    "runtime": "Runtime",
+    "designPattern": "Padrão de projeto",
+    "designPatternValue": "Flux (actions → stores → views), implementado com Zustand",
+    "mainLibraries": "Bibliotecas principais",
+    "libraries": [
+      "Next.js 15 (App Router, export estático)",
+      "React 19",
+      "Zustand 5 (gerenciamento de estado)",
+      "Yup (validação de schemas)",
+      "react-hook-form + @hookform/resolvers",
+      "Tailwind CSS + Neobrutalism",
+      "next-themes (tema claro / escuro / sistema)",
+      "lucide-react (ícones)"
+    ],
+    "architectureNote": "Separação clara entre componentes reutilizáveis e páginas; internacionalização pt-BR / en-GB; testes unitários com Jest."
+  },
+  "loading": {
+    "default": "Carregando...",
+    "navigating": "Carregando..."
+  }
+}
