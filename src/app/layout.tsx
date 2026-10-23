@@ -19,18 +19,19 @@ const spaceGrotesk = Space_Grotesk({
   display: 'swap',
 });
 
+const repoName = process.env.NODE_ENV === 'production' ? '/personal-spa' : '';
+
 export const metadata: Metadata = {
   title: {
     default: 'Guilherme Gonçalves — Software Engineer',
     template: '%s | Guilherme Gonçalves',
   },
-  description:
-    'Personal page of Guilherme Gonçalves — software engineer, mathematician and teacher. Event-driven architectures, workflow engines, complexity analysis.',
+  description: 'Personal page of Guilherme Gonçalves',
   authors: [{ name: 'Guilherme Gonçalves' }],
   icons: {
-    icon: [{ url: '/logos/gg-ltda.svg', type: 'image/svg+xml' }],
-    shortcut: '/logos/gg-ltda.svg',
-    apple: '/logos/gg-ltda.svg',
+    icon: [{ url: `${repoName}/logos/gg-ltda.svg`, type: 'image/svg+xml' }],
+    shortcut: `${repoName}/logos/gg-ltda.svg`,
+    apple: `${repoName}/logos/gg-ltda.svg`,
   },
 };
 
