@@ -28,11 +28,11 @@
     },
     "workRegime": {
       "title": "Allocation / Working arrangements",
-      "content": "Available for service contracts (PJ) on a remote or hybrid basis. Experience with full-time and part-time remote work. Sole trader company: Guilherme L. Gonçalves Desenvolvimento de Sistemas Ltda. (CNPJ/ME: 44.867.072/0001-06)."
+      "content": "Available for work on a remote or hybrid basis. Experience with full-time and part-time remote work. Sole trader company: Guilherme L. Gonçalves Desenvolvimento de Sistemas Ltda. (CNPJ/ME: 44.867.072/0001-06)."
     },
     "hiring": {
       "title": "Engagement",
-      "content": "Preference for service contracts (PJ). Open to discussing employment contracts in exceptional cases. Available for short-, medium- and long-term projects. Please get in touch via the contact form or the channels listed in the footer."
+      "content": "Preference for service contracts. Open to discussing employment contracts in exceptional cases. Available for short-, medium- and long-term projects. Please get in touch via the contact form or the channels listed in the footer."
     }
   },
   "experiences": {
@@ -770,7 +770,7 @@
       "next-themes (light / dark / system)",
       "lucide-react (icons)"
     ],
-    "architectureNote": "Clear separation between reusable components and pages; i18n pt-BR / en-GB; unit tests with Jest."
+    "architectureNote": "Clear separation between reusable components and pages; i18n; unit tests with Jest."
   },
   "loading": {
     "default": "Loading...",
