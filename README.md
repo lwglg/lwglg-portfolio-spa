@@ -47,15 +47,15 @@ URL esperada: `https://lwglg.github.io/portfolio-spa/`
 
 ### Checklist pré-deploy
 
-| Item                                          | Estado |
-| --------------------------------------------- | ------ |
-| `output: 'export'` + `trailingSlash: true`    | Sim    |
-| `basePath` `/portfolio-spa` em produção | Sim    |
-| `images.unoptimized: true`                    | Sim    |
-| `public/.nojekyll` + touch no CI              | Sim    |
-| Assets com `assetPath()` (logos, foto)        | Sim    |
-| Favicon `gg-ltda.svg`                         | Sim    |
-| Workflow Pages (build → upload → deploy)      | Sim    |
+| Item                                       | Estado |
+| ------------------------------------------ | ------ |
+| `output: 'export'` + `trailingSlash: true` | Sim    |
+| `basePath` `/portfolio-spa` em produção    | Sim    |
+| `images.unoptimized: true`                 | Sim    |
+| `public/.nojekyll` + touch no CI           | Sim    |
+| Assets com `assetPath()` (logos, foto)     | Sim    |
+| Favicon `gg-ltda.svg`                      | Sim    |
+| Workflow Pages (build → upload → deploy)   | Sim    |
 
 ## Arquitectura
 
