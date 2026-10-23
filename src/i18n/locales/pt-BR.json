@@ -13,7 +13,7 @@
     "subtitle": "Engenheiro de Software · Tutor de Matemática",
     "presentation": {
       "title": "Apresentação",
-      "content": "Sou engenheiro de software com 17 anos de experiência, iniciando em ambiente de P&D na construção de sistemas embarcados para equipamentos de aquisição de dados e dispositivos eletromecânicos de precisão, migrando posteriormente para o desenvolvimento web. Estudei Engenharia Elétrica por três anos na UFSC e, em 2016, mudei para Matemática na mesma universidade, obtendo o bacharelado em 2019. Atualmente atuo como engenheiro back-end desenhando software escalável baseado em nuvem, com ênfase em Python, TypeScript, Java e Go, e interesse particular em arquiteturas orientadas a eventos, projetos de motores de workflow e análise de complexidade. Trabalho a tempo parcial como professor particular de Matemática, sobretudo para alunos de graduação e ensino médio."
+      "content": "Sou engenheiro de software com 17 anos de experiência, iniciando em ambiente de P&D na construção de sistemas embarcados para equipamentos de aquisição de dados e dispositivos eletromecânicos de precisão, migrando posteriormente para o desenvolvimento web. Estudei Engenharia Elétrica por três anos na UFSC e, em 2016, mudei para Matemática na mesma universidade, obtendo o bacharelado em 2019. Atualmente atuo como engenheiro back-end desenhando software escalável baseado em nuvem, com ênfase em Python, TypeScript, Go e Java, com interesse particular em arquiteturas orientadas a eventos, projetos de motores de workflow e análise de complexidade. Trabalho a tempo parcial como professor particular de Matemática, sobretudo para alunos de graduação e ensino médio."
     },
     "specialties": {
       "title": "Especialidades",
@@ -28,7 +28,7 @@
     },
     "workRegime": {
       "title": "Alocação / Regime de Trabalho",
-      "content": "Disponível para trabalho em regime remoto ou híbrido. Experiência em trabalho remoto full-time e part-time. Empresa individual: Guilherme L. Gonçalves Desenvolvimento de Sistemas Ltda. (CNPJ/ME: 44.867.072/0001-06)."
+      "content": "Disponível para contratos de prestação de serviços (PJ) em regime remoto ou híbrido. Experiência em trabalho remoto full-time e part-time. Empresa individual: Guilherme L. Gonçalves Desenvolvimento de Sistemas Ltda. (CNPJ/ME: 44.867.072/0001-06)."
     },
     "hiring": {
       "title": "Contratação",
@@ -348,7 +348,7 @@
         "id": "nld-img-heat-map",
         "yearRangeId": "2025",
         "year": "2025",
-        "title": "NLD — Image Analysis API",
+        "title": "NLD :: Image Analysis API",
         "description": "Web service que fornece uma API RESTful para a inspeção e análise de imagens, no contexto de segurança patrimonial.",
         "repoUrl": "https://github.com/lwglg/nld-img-heat-map",
         "articleUrl": null,
@@ -368,7 +368,7 @@
         "id": "empirical-tc",
         "yearRangeId": "2022",
         "year": "2022",
-        "title": "empirical-tc-ts — Determinação experimental de complexidade temporal e espacial de algoritmos",
+        "title": "Determinação experimental de complexidade temporal e espacial de algoritmos",
         "description": "Artigo publicado na newsletter Better Programming (Medium) em 2022. Investiga um método experimental para determinar a complexidade temporal e espacial de algoritmos em TypeScript, executados em Node.js. O projeto de prova de conceito avalia razões de tempo para a implementação clássica do merge-sort.",
         "articleUrl": "https://medium.com/better-programming/determining-time-complexity-of-algorithms-experimentally-4f844a5080ec",
         "repoUrl": "https://github.com/guligon90/empirical-tc-ts",
@@ -378,7 +378,7 @@
   },
   "contact": {
     "title": "Contato",
-    "subtitle": "Envie uma mensagem. Receberá um e-mail de confirmação.",
+    "subtitle": "Caso esteja interessado(a) em saber mais, entre em contato que lhe responderei em seguida.",
     "form": {
       "firstName": "Nome",
       "lastName": "Sobrenome",
@@ -747,7 +747,7 @@
     ]
   },
   "about": {
-    "title": "Sobre a aplicação",
+    "title": "Sobre",
     "subtitle": "Informações sobre o autor e sobre esta aplicação",
     "photoAlt": "Retrato de Guilherme Gonçalves",
     "socialGithub": "GitHub",
@@ -770,7 +770,7 @@
       "next-themes (tema claro / escuro / sistema)",
       "lucide-react (ícones)"
     ],
-    "architectureNote": "Separação clara entre componentes reutilizáveis e páginas; internacionalização; testes unitários com Jest."
+    "architectureNote": "Separação clara entre componentes reutilizáveis e páginas; internacionalização pt-BR / en-GB; testes unitários com Jest."
   },
   "loading": {
     "default": "Carregando...",

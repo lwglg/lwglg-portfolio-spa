@@ -1,5 +1,5 @@
-import { useThemeStore, hydrateThemeStore } from '@/stores/themeStore';
 import { DEFAULT_THEME, STORAGE_KEYS } from '@/constants';
+import { hydrateThemeStore, useThemeStore } from '@/stores/themeStore';
 
 describe('themeStore', () => {
   beforeEach(() => {

@@ -1,10 +1,11 @@
 'use client';
 
-import { Moon, Sun, Monitor } from 'lucide-react';
-import { useThemeStore } from '@/stores/themeStore';
-import { useLocaleStore } from '@/stores/localeStore';
+import { Monitor, Moon, Sun } from 'lucide-react';
+
 import { getDictionary } from '@/i18n';
 import { cn } from '@/lib/utils';
+import { useLocaleStore } from '@/stores/localeStore';
+import { useThemeStore } from '@/stores/themeStore';
 import type { Theme } from '@/types';
 
 const options: { value: Theme; Icon: typeof Sun }[] = [

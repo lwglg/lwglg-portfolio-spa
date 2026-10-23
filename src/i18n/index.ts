@@ -1,7 +1,8 @@
-import type { Locale } from '@/types';
 import { DEFAULT_LOCALE, SUPPORTED_LOCALES } from '@/constants';
-import ptBR from './locales/pt-BR.json';
+import type { Locale } from '@/types';
+
 import enGB from './locales/en-GB.json';
+import ptBR from './locales/pt-BR.json';
 
 const dictionaries = {
   'pt-BR': ptBR,

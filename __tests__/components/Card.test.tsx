@@ -1,5 +1,6 @@
 import { render, screen } from '@testing-library/react';
-import { Card, CardHeader, CardTitle, CardContent, CardDescription } from '@/components/ui/Card';
+
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/Card';
 
 describe('Card', () => {
   it('renders composed card structure', () => {

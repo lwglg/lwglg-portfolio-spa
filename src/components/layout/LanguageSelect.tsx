@@ -1,9 +1,9 @@
 'use client';
 
-import { useLocaleStore } from '@/stores/localeStore';
 import { localeMeta } from '@/i18n/localeMeta';
-import type { Locale } from '@/types';
 import { cn } from '@/lib/utils';
+import { useLocaleStore } from '@/stores/localeStore';
+import type { Locale } from '@/types';
 
 /**
  * Native select: flag appears only once — inside the option label.

@@ -1,8 +1,8 @@
 'use client';
 
-import { useLocaleStore } from '@/stores/localeStore';
-import { getDictionary } from '@/i18n';
 import { ExperienceTimeline } from '@/components/shared/ExperienceTimeline';
+import { getDictionary } from '@/i18n';
+import { useLocaleStore } from '@/stores/localeStore';
 
 export default function ExperiencesPage() {
   const locale = useLocaleStore((s) => s.locale);

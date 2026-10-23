@@ -23,6 +23,7 @@ export function useInView<T extends HTMLElement = HTMLDivElement>(options: UseIn
     // Prefer reduced motion: show immediately
     if (
       typeof window !== 'undefined' &&
+      typeof window.matchMedia === 'function' &&
       window.matchMedia('(prefers-reduced-motion: reduce)').matches
     ) {
       setInView(true);

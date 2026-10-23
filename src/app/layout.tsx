@@ -1,11 +1,13 @@
 import type { Metadata } from 'next';
 import { Archivo_Black, Space_Grotesk } from 'next/font/google';
-import { assetPath } from '@/lib/asset';
-import { ASSET_PATHS } from '@/constants';
-import { ThemeProvider } from '@/components/layout/ThemeProvider';
-import { Header } from '@/components/layout/Header';
+
 import { Footer } from '@/components/layout/Footer';
 import { GlobalLoading } from '@/components/layout/GlobalLoading';
+import { Header } from '@/components/layout/Header';
+import { ThemeProvider } from '@/components/layout/ThemeProvider';
+import { ASSET_PATHS } from '@/constants';
+import { assetPath } from '@/lib/asset';
+
 import '@/styles/globals.css';
 
 const archivoBlack = Archivo_Black({
@@ -26,7 +28,8 @@ export const metadata: Metadata = {
     default: 'Guilherme Gonçalves — Software Engineer',
     template: '%s | Guilherme Gonçalves',
   },
-  description: 'Personal page of Guilherme Gonçalves',
+  description:
+    'Personal page of Guilherme Gonçalves — software engineer, mathematician and teacher. Event-driven architectures, workflow engines, complexity analysis.',
   authors: [{ name: 'Guilherme Gonçalves' }],
   icons: {
     icon: [{ url: assetPath(ASSET_PATHS.favicon), type: 'image/svg+xml' }],

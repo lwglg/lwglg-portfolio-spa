@@ -3,9 +3,10 @@
  * Actions → Store (Zustand) → Components subscribe via selectors.
  */
 import { create } from 'zustand';
-import type { Locale } from '@/types';
-import { defaultLocale, isValidLocale } from '@/i18n';
+
 import { STORAGE_KEYS, SUPPORTED_LOCALES } from '@/constants';
+import { defaultLocale, isValidLocale } from '@/i18n';
+import type { Locale } from '@/types';
 
 interface LocaleState {
   locale: Locale;

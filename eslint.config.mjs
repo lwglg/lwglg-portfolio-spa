@@ -1,7 +1,8 @@
-import { dirname } from 'path';
-import { fileURLToPath } from 'url';
 import { FlatCompat } from '@eslint/eslintrc';
 import eslintConfigPrettier from 'eslint-config-prettier';
+import simpleImportSort from 'eslint-plugin-simple-import-sort';
+import { dirname } from 'path';
+import { fileURLToPath } from 'url';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -18,7 +19,32 @@ const config = [
   ...compat.extends('next/core-web-vitals', 'next/typescript'),
   eslintConfigPrettier,
   {
+    plugins: {
+      'simple-import-sort': simpleImportSort,
+    },
     rules: {
+      'simple-import-sort/imports': [
+        'error',
+        {
+          groups: [
+            // Side effect imports
+            ['^\\u0000'],
+            // Node builtins
+            ['^node:'],
+            // External packages (react first)
+            ['^react', '^next', '^@?\\w'],
+            // Internal aliases
+            ['^@/'],
+            // Relative parent
+            ['^\\.\\.(?!/?$)', '^\\.\\./?$'],
+            // Relative same folder
+            ['^\\./(?=.*/)(?!/?$)', '^\\.(?!/?$)', '^\\./?$'],
+            // Style imports
+            ['^.+\\.s?css$'],
+          ],
+        },
+      ],
+      'simple-import-sort/exports': 'error',
       '@typescript-eslint/no-unused-vars': [
         'error',
         { argsIgnorePattern: '^_', varsIgnorePattern: '^_' },

@@ -2,13 +2,14 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { useLocaleStore } from '@/stores/localeStore';
-import { getDictionary } from '@/i18n';
+
 import { LanguageSelect } from '@/components/layout/LanguageSelect';
 import { ThemeToggle } from '@/components/layout/ThemeToggle';
-import { cn } from '@/lib/utils';
+import { ASSET_PATHS, NAV_ITEMS } from '@/constants';
+import { getDictionary } from '@/i18n';
 import { assetPath } from '@/lib/asset';
-import { NAV_ITEMS, ASSET_PATHS } from '@/constants';
+import { cn } from '@/lib/utils';
+import { useLocaleStore } from '@/stores/localeStore';
 
 export function Header() {
   const pathname = usePathname();

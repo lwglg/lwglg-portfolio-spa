@@ -1,8 +1,8 @@
 'use client';
 
-import { useLocaleStore } from '@/stores/localeStore';
-import { getDictionary } from '@/i18n';
 import { EducationTimeline } from '@/components/shared/EducationTimeline';
+import { getDictionary } from '@/i18n';
+import { useLocaleStore } from '@/stores/localeStore';
 
 export default function EducationPage() {
   const locale = useLocaleStore((s) => s.locale);

@@ -1,9 +1,9 @@
 'use client';
 
-import { useLocaleStore } from '@/stores/localeStore';
-import { getDictionary } from '@/i18n';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/Card';
 import { AnimateOnScroll } from '@/components/shared/AnimateOnScroll';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/Card';
+import { getDictionary } from '@/i18n';
+import { useLocaleStore } from '@/stores/localeStore';
 
 export default function HomePage() {
   const locale = useLocaleStore((s) => s.locale);

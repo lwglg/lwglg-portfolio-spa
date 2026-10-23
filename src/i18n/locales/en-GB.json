@@ -13,7 +13,7 @@
     "subtitle": "Software Engineer · Mathematics Tutor",
     "presentation": {
       "title": "Introduction",
-      "content": "I am a software engineer with 15 years of experience, starting in an R&D setting building embedded systems for data acquisition equipment and precision electromechanical devices, later migrating to web development. I studied Electrical Engineering for three years at UFSC (Federal University of Santa Catarina, Brazil) and switched to Mathematics in 2016 at the same university, obtaining a bachelor's degree in 2019. I currently work as a back-end engineer designing scalable cloud-based software, with an emphasis on Python, TypeScript, Java and Go, and a particular interest in event-driven architectures, workflow engine designs and complexity analysis. I also work part-time as a private Maths teacher, mostly for undergraduate and secondary-school students."
+      "content": "I am a software engineer with 17 years of experience, starting in an R&D setting building embedded systems for data acquisition equipment and precision electromechanical devices, later migrating to web development. I studied Electrical Engineering for three years at UFSC (Federal University of Santa Catarina, Brazil) and switched to Mathematics in 2016 at the same university, obtaining a bachelor's degree in 2019. I currently work as a back-end engineer designing scalable cloud-based software, with an emphasis on Python, TypeScript, Go and Java, with a particular interest in event-driven architectures, workflow engine designs and complexity analysis. I also work part-time as a private Maths teacher, mostly for undergraduate and secondary-school students."
     },
     "specialties": {
       "title": "Specialties",
@@ -28,11 +28,11 @@
     },
     "workRegime": {
       "title": "Allocation / Working arrangements",
-      "content": "Available for work on a remote or hybrid basis. Experience with full-time and part-time remote work. Sole trader company: Guilherme L. Gonçalves Desenvolvimento de Sistemas Ltda. (CNPJ/ME: 44.867.072/0001-06)."
+      "content": "Available for service contracts (PJ) on a remote or hybrid basis. Experience with full-time and part-time remote work. Sole trader company: Guilherme L. Gonçalves Desenvolvimento de Sistemas Ltda. (CNPJ/ME: 44.867.072/0001-06)."
     },
     "hiring": {
       "title": "Engagement",
-      "content": "Preference for service contracts. Open to discussing employment contracts in exceptional cases. Available for short-, medium- and long-term projects. Please get in touch via the contact form or the channels listed in the footer."
+      "content": "Preference for service contracts (PJ). Open to discussing employment contracts in exceptional cases. Available for short-, medium- and long-term projects. Please get in touch via the contact form or the channels listed in the footer."
     }
   },
   "experiences": {
@@ -378,10 +378,10 @@
   },
   "contact": {
     "title": "Contact",
-    "subtitle": "Send a message. You will receive a confirmation e-mail.",
+    "subtitle": "If you want to know more about me, please drop a line and I'll answer you shortly.",
     "form": {
       "firstName": "First name",
-      "lastName": "Last name",
+      "lastName": "Surname",
       "email": "E-mail",
       "organisation": "Organisation name (optional)",
       "phone": "Telephone (optional)",
@@ -770,7 +770,7 @@
       "next-themes (light / dark / system)",
       "lucide-react (icons)"
     ],
-    "architectureNote": "Clear separation between reusable components and pages; i18n; unit tests with Jest."
+    "architectureNote": "Clear separation between reusable components and pages; i18n pt-BR / en-GB; unit tests with Jest."
   },
   "loading": {
     "default": "Loading...",

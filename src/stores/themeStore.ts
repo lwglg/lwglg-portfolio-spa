@@ -2,8 +2,9 @@
  * Flux-style store for theme (light / dark / system).
  */
 import { create } from 'zustand';
+
+import { DEFAULT_THEME, STORAGE_KEYS, THEMES } from '@/constants';
 import type { Theme } from '@/types';
-import { THEMES, DEFAULT_THEME, STORAGE_KEYS } from '@/constants';
 
 interface ThemeState {
   theme: Theme;

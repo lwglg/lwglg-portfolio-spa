@@ -1,8 +1,8 @@
 'use client';
 
-import { useLocaleStore } from '@/stores/localeStore';
-import { getDictionary } from '@/i18n';
 import { SOCIAL_LINKS } from '@/constants';
+import { getDictionary } from '@/i18n';
+import { useLocaleStore } from '@/stores/localeStore';
 
 const SOCIAL_LABELS: Record<(typeof SOCIAL_LINKS)[number]['key'], string> = {
   socialGithub: 'GitHub',

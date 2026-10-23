@@ -2,8 +2,9 @@
 
 import { useEffect } from 'react';
 import { ThemeProvider as NextThemesProvider } from 'next-themes';
-import { useThemeStore, hydrateThemeStore } from '@/stores/themeStore';
+
 import { hydrateLocaleStore } from '@/stores/localeStore';
+import { hydrateThemeStore, useThemeStore } from '@/stores/themeStore';
 
 function ThemeSync() {
   const theme = useThemeStore((s) => s.theme);

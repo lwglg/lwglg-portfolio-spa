@@ -1,4 +1,4 @@
-import { getDictionary, defaultLocale, isValidLocale, locales } from '@/i18n';
+import { defaultLocale, getDictionary, isValidLocale, locales } from '@/i18n';
 
 describe('i18n', () => {
   it('defaultLocale is pt-BR', () => {

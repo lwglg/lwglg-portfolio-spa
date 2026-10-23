@@ -1,8 +1,8 @@
 'use client';
 
-import { useLocaleStore } from '@/stores/localeStore';
+import { type ProjectItem, ProjectTimeline } from '@/components/shared/ProjectTimeline';
 import { getDictionary } from '@/i18n';
-import { ProjectTimeline, type ProjectItem } from '@/components/shared/ProjectTimeline';
+import { useLocaleStore } from '@/stores/localeStore';
 
 export default function ProjectsPage() {
   const locale = useLocaleStore((s) => s.locale);

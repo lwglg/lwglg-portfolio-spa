@@ -1,5 +1,5 @@
-import { createContactSchema } from '@/schemas/contactSchema';
 import { getDictionary } from '@/i18n';
+import { createContactSchema } from '@/schemas/contactSchema';
 
 const dict = getDictionary('pt-BR');
 const schema = createContactSchema(dict);
@@ -13,7 +13,7 @@ describe('createContactSchema', () => {
       organisation: 'Acme Ltda',
       countryCode: '+55',
       phone: '11987654321',
-      message: 'Olá, gostaria de conversar sobre um projecto.',
+      message: 'Olá, gostaria de conversar sobre um projeto.',
     };
     await expect(schema.validate(data)).resolves.toMatchObject(data);
   });
@@ -38,6 +38,18 @@ describe('createContactSchema', () => {
         email: 'not-an-email',
         countryCode: '+55',
         message: 'Hello',
+      }),
+    ).rejects.toThrow();
+  });
+
+  it('rejects name with digits', async () => {
+    await expect(
+      schema.validate({
+        firstName: 'Ana123',
+        lastName: 'Silva',
+        email: 'a@b.com',
+        countryCode: '+55',
+        message: 'Hi',
       }),
     ).rejects.toThrow();
   });

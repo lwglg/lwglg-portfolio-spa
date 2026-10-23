@@ -1,4 +1,4 @@
-import { localeMeta, getLocaleMeta } from '@/i18n/localeMeta';
+import { getLocaleMeta, localeMeta } from '@/i18n/localeMeta';
 
 describe('localeMeta', () => {
   it('includes pt-BR and en-GB', () => {

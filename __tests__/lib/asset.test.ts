@@ -1,5 +1,5 @@
-import { assetPath } from '@/lib/asset';
 import { APP_BASE_PATH } from '@/constants';
+import { assetPath } from '@/lib/asset';
 
 describe('assetPath', () => {
   it('returns empty string as-is', () => {

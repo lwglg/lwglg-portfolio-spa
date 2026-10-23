@@ -1,10 +1,11 @@
 'use client';
 
-import { useMemo, useState, useEffect } from 'react';
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/Card';
+import { useEffect, useMemo, useState } from 'react';
+
 import { AnimateOnScroll } from '@/components/shared/AnimateOnScroll';
-import { cn } from '@/lib/utils';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/Card';
 import { assetPath } from '@/lib/asset';
+import { cn } from '@/lib/utils';
 
 export interface YearRange {
   id: string;

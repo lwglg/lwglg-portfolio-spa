@@ -2,11 +2,12 @@
 
 import { useEffect, useRef } from 'react';
 import { usePathname } from 'next/navigation';
-import { useLoadingStore } from '@/stores/loadingStore';
-import { useLocaleStore } from '@/stores/localeStore';
-import { getDictionary } from '@/i18n';
+
 import { LoadingOverlay } from '@/components/shared/LoadingOverlay';
 import { NAV_LOADING_DURATION_MS } from '@/constants';
+import { getDictionary } from '@/i18n';
+import { useLoadingStore } from '@/stores/loadingStore';
+import { useLocaleStore } from '@/stores/localeStore';
 
 /**
  * Global Neobrutalism loading overlay.

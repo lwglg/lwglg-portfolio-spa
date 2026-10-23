@@ -1,12 +1,13 @@
 'use client';
 
-import { Github, Linkedin, BookOpen } from 'lucide-react';
-import { useLocaleStore } from '@/stores/localeStore';
-import { getDictionary } from '@/i18n';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/Card';
+import { BookOpen, Github, Linkedin } from 'lucide-react';
+
 import { AnimateOnScroll } from '@/components/shared/AnimateOnScroll';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/Card';
+import { ASSET_PATHS, NODE_VERSION, SOCIAL_LINKS, TYPESCRIPT_VERSION } from '@/constants';
+import { getDictionary } from '@/i18n';
 import { assetPath } from '@/lib/asset';
-import { TYPESCRIPT_VERSION, NODE_VERSION, SOCIAL_LINKS, ASSET_PATHS } from '@/constants';
+import { useLocaleStore } from '@/stores/localeStore';
 
 export default function AboutPage() {
   const locale = useLocaleStore((s) => s.locale);

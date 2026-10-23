@@ -1,6 +1,6 @@
 import { submitContactForm } from '@/actions/contactActions';
-import { useContactStore } from '@/stores/contactStore';
 import { getDictionary } from '@/i18n';
+import { useContactStore } from '@/stores/contactStore';
 import type { ContactFormData } from '@/types';
 
 const dict = getDictionary('pt-BR');
@@ -12,7 +12,7 @@ const validData: ContactFormData = {
   organisation: 'GLG',
   countryCode: '+55',
   phone: '51999999999',
-  message: 'Olá, contacto de teste.',
+  message: 'Olá, contato de teste.',
 };
 
 describe('submitContactForm', () => {

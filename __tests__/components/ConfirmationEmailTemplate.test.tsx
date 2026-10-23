@@ -1,4 +1,5 @@
 import { render, screen } from '@testing-library/react';
+
 import { ConfirmationEmailTemplate } from '@/components/shared/ConfirmationEmailTemplate';
 import { getDictionary } from '@/i18n';
 

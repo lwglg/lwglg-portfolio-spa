@@ -1,21 +1,24 @@
 'use client';
 
-import { useForm } from 'react-hook-form';
+import { useEffect } from 'react';
+import { Controller, useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
-import { useLocaleStore } from '@/stores/localeStore';
-import { useContactStore } from '@/stores/contactStore';
-import { getDictionary } from '@/i18n';
-import { createContactSchema } from '@/schemas/contactSchema';
+
 import { submitContactForm } from '@/actions/contactActions';
-import type { ContactFormData } from '@/types';
-import { COUNTRY_CODES, DEFAULT_COUNTRY_CODE } from '@/constants';
 import { Button } from '@/components/ui/Button';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/Card';
 import { Input } from '@/components/ui/Input';
 import { Label } from '@/components/ui/Label';
-import { Textarea } from '@/components/ui/Textarea';
 import { Select } from '@/components/ui/Select';
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/Card';
 import { Spinner } from '@/components/ui/Spinner';
+import { Textarea } from '@/components/ui/Textarea';
+import { COUNTRY_CODES, DEFAULT_COUNTRY_CODE } from '@/constants';
+import { getDictionary } from '@/i18n';
+import { formatPhoneByCountry, isPhoneInputChar, phonePlaceholder } from '@/lib/phoneMask';
+import { createContactSchema } from '@/schemas/contactSchema';
+import { useContactStore } from '@/stores/contactStore';
+import { useLocaleStore } from '@/stores/localeStore';
+import type { ContactFormData } from '@/types';
 
 export function ContactForm() {
   const locale = useLocaleStore((s) => s.locale);
@@ -29,6 +32,9 @@ export function ContactForm() {
   const {
     register,
     handleSubmit,
+    control,
+    watch,
+    setValue,
     formState: { errors },
     reset: resetForm,
   } = useForm<ContactFormData>({
@@ -43,6 +49,19 @@ export function ContactForm() {
       message: '',
     },
   });
+
+  const countryCode = watch('countryCode') || DEFAULT_COUNTRY_CODE;
+  const phoneValue = watch('phone') || '';
+
+  // Re-apply mask when country changes
+  useEffect(() => {
+    if (!phoneValue) return;
+    const next = formatPhoneByCountry(countryCode, phoneValue);
+    if (next !== phoneValue) {
+      setValue('phone', next, { shouldValidate: true });
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- only on country change
+  }, [countryCode]);
 
   const onSubmit = async (data: ContactFormData) => {
     try {
@@ -112,11 +131,60 @@ export function ContactForm() {
           <div className="grid gap-4 sm:grid-cols-[minmax(9.5rem,11rem)_1fr]">
             <div>
               <Label htmlFor="countryCode">{dict.contact.form.countryCode}</Label>
-              <Select id="countryCode" options={COUNTRY_CODES} {...register('countryCode')} />
+              <Controller
+                name="countryCode"
+                control={control}
+                render={({ field }) => (
+                  <Select
+                    id="countryCode"
+                    options={COUNTRY_CODES}
+                    value={field.value}
+                    onChange={field.onChange}
+                    onBlur={field.onBlur}
+                    name={field.name}
+                    ref={field.ref}
+                  />
+                )}
+              />
             </div>
             <div>
               <Label htmlFor="phone">{dict.contact.form.phone}</Label>
-              <Input id="phone" type="tel" placeholder="11 98765-4321" {...register('phone')} />
+              <Controller
+                name="phone"
+                control={control}
+                render={({ field }) => (
+                  <Input
+                    id="phone"
+                    type="tel"
+                    inputMode="tel"
+                    autoComplete="tel-national"
+                    placeholder={phonePlaceholder(countryCode)}
+                    value={field.value ?? ''}
+                    name={field.name}
+                    ref={field.ref}
+                    onBlur={field.onBlur}
+                    onKeyDown={(e) => {
+                      // Allow navigation / edit keys
+                      if (e.ctrlKey || e.metaKey || e.altKey || e.key.length !== 1) {
+                        return;
+                      }
+                      if (!isPhoneInputChar(e.key)) {
+                        e.preventDefault();
+                      }
+                    }}
+                    onChange={(e) => {
+                      const masked = formatPhoneByCountry(countryCode, e.target.value);
+                      field.onChange(masked);
+                    }}
+                    onPaste={(e) => {
+                      e.preventDefault();
+                      const text = e.clipboardData.getData('text');
+                      const masked = formatPhoneByCountry(countryCode, text);
+                      field.onChange(masked);
+                    }}
+                  />
+                )}
+              />
             </div>
           </div>
 

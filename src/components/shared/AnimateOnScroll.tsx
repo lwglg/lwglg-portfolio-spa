@@ -1,6 +1,7 @@
 'use client';
 
-import type { ReactNode, HTMLAttributes, ElementType } from 'react';
+import type { ElementType, HTMLAttributes, ReactNode } from 'react';
+
 import { useInView } from '@/hooks/useInView';
 import { cn } from '@/lib/utils';
 

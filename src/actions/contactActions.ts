@@ -2,9 +2,9 @@
  * Flux actions for the contact form.
  * Call these from UI; they interact with the store and side-effects.
  */
+import type { Dictionary } from '@/i18n';
 import { useContactStore } from '@/stores/contactStore';
 import type { ContactFormData } from '@/types';
-import type { Dictionary } from '@/i18n';
 
 /**
  * Simulated submission (static export has no server).
