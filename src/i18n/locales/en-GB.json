@@ -368,8 +368,8 @@
         "id": "empirical-tc",
         "yearRangeId": "2022",
         "year": "2022",
-        "title": "Experimental determination of algorithmic time complexity",
-        "description": "Article published in the Better Programming newsletter (Medium) in 2022. Investigates an experimental method for determining the time complexity of algorithms in TypeScript running on Node.js. The proof-of-concept project evaluates time ratios for the classical merge-sort implementation.",
+        "title": "Experimental determination of algorithmic time and spatial complexity",
+        "description": "Article published in the Better Programming newsletter (Medium) in 2022. Investigates an experimental method for determining the time and spatial complexity of algorithms in TypeScript running on Node.js. The proof-of-concept project evaluates time ratios for the classical merge-sort implementation.",
         "articleUrl": "https://medium.com/better-programming/determining-time-complexity-of-algorithms-experimentally-4f844a5080ec",
         "repoUrl": "https://github.com/guligon90/empirical-tc-ts",
         "technologies": ["TypeScript", "Node.js", "Algorithmic complexity", "Merge-sort"]

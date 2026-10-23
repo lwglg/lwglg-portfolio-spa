@@ -1,6 +1,6 @@
 # portfolio-spa
 
-Página pessoal estática de Guilherme Gonçalves — Next.js (App Router), TypeScript, Zustand (arquitectura Flux), Neobrutalism UI, i18n (pt-BR / en-GB) e Yup.
+Página pessoal estática de Guilherme Gonçalves — Next.js (App Router), TypeScript, Zustand (Arquitetura Flux), Neobrutalism UI, i18n (pt-BR / en-GB) e Yup.
 
 ## Requisitos
 
@@ -57,7 +57,7 @@ URL esperada: `https://lwglg.github.io/portfolio-spa/`
 | Favicon `gg-ltda.svg`                      | Sim    |
 | Workflow Pages (build → upload → deploy)   | Sim    |
 
-## Arquitectura
+## Arquitetura
 
 - **Flux + Zustand**: stores em `src/stores/` (locale, theme, contact); actions em `src/actions/`.
 - **Componentes reutilizáveis**: `src/components/ui/` (Button, Card, Input, …) e `src/components/layout/`.

@@ -368,8 +368,8 @@
         "id": "empirical-tc",
         "yearRangeId": "2022",
         "year": "2022",
-        "title": "empirical-tc-ts — Determinação experimental de complexidade temporal de algoritmos",
-        "description": "Artigo publicado na newsletter Better Programming (Medium) em 2022. Investiga um método experimental para determinar a complexidade temporal de algoritmos em TypeScript, executados em Node.js. O projeto de prova de conceito avalia razões de tempo para a implementação clássica do merge-sort.",
+        "title": "empirical-tc-ts — Determinação experimental de complexidade temporal e espacial de algoritmos",
+        "description": "Artigo publicado na newsletter Better Programming (Medium) em 2022. Investiga um método experimental para determinar a complexidade temporal e espacial de algoritmos em TypeScript, executados em Node.js. O projeto de prova de conceito avalia razões de tempo para a implementação clássica do merge-sort.",
         "articleUrl": "https://medium.com/better-programming/determining-time-complexity-of-algorithms-experimentally-4f844a5080ec",
         "repoUrl": "https://github.com/guligon90/empirical-tc-ts",
         "technologies": ["TypeScript", "Node.js", "Complexidade algorítmica", "Merge-sort"]
@@ -716,7 +716,7 @@
             "title": "Computação Científica",
             "items": [
               "Análise assintótica (Big-O)",
-              "Determinação de complexidade temporal e espacial de algoritmos",
+              "Determinação de complexidade temporal e espacial e espacial de algoritmos",
               "Métodos experimentais para estimativa de complexidade"
             ]
           },
