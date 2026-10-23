@@ -29,9 +29,9 @@ export const metadata: Metadata = {
   description: 'Personal page of Guilherme Gonçalves',
   authors: [{ name: 'Guilherme Gonçalves' }],
   icons: {
-    icon: [{ url: `${repoName}/public/logos/gg-ltda.svg`, type: 'image/svg+xml' }],
-    shortcut: `${repoName}/public/logos/gg-ltda.svg`,
-    apple: `${repoName}/public/logos/gg-ltda.svg`,
+    icon: [{ url: `${repoName}/logos/gg-ltda.svg`, type: 'image/svg+xml' }],
+    shortcut: `${repoName}/logos/gg-ltda.svg`,
+    apple: `${repoName}/logos/gg-ltda.svg`,
   },
 };
 
