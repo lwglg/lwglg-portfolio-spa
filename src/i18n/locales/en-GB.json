@@ -10,10 +10,10 @@
   },
   "home": {
     "title": "Guilherme Gonçalves",
-    "subtitle": "Software Engineer · Mathematician · Teacher",
+    "subtitle": "Software Engineer · Mathematics Tutor",
     "presentation": {
       "title": "Introduction",
-      "content": "I am a software engineer with 15 years of experience, starting in an R&D setting building embedded systems for data acquisition equipment and precision electromechanical devices, later migrating to web development. I studied Electrical Engineering for three years at UFSC (Federal University of Santa Catarina, Brazil) and switched to Mathematics in 2016 at the same university, obtaining a bachelor's degree in 2019. I currently work as a back-end engineer designing scalable cloud-based software, with an emphasis on Python, TypeScript and Java, and a particular interest in event-driven architectures, workflow engine designs and complexity analysis. I also work part-time as a private Maths teacher, mostly for undergraduate and secondary-school students."
+      "content": "I am a software engineer with 15 years of experience, starting in an R&D setting building embedded systems for data acquisition equipment and precision electromechanical devices, later migrating to web development. I studied Electrical Engineering for three years at UFSC (Federal University of Santa Catarina, Brazil) and switched to Mathematics in 2016 at the same university, obtaining a bachelor's degree in 2019. I currently work as a back-end engineer designing scalable cloud-based software, with an emphasis on Python, TypeScript, Java and Go, and a particular interest in event-driven architectures, workflow engine designs and complexity analysis. I also work part-time as a private Maths teacher, mostly for undergraduate and secondary-school students."
     },
     "specialties": {
       "title": "Specialties",
@@ -21,7 +21,7 @@
         "Event-driven architectures",
         "Workflow engine design",
         "Complexity analysis (Big-O)",
-        "Scalable back-end development (Python, TypeScript, Java)",
+        "Scalable back-end development (Python, TypeScript, Java, Go)",
         "Embedded systems and data acquisition",
         "Mathematics teaching (Calculus, Analysis, Algebra)"
       ]

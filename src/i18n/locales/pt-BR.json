@@ -10,10 +10,10 @@
   },
   "home": {
     "title": "Guilherme Gonçalves",
-    "subtitle": "Engenheiro de Software · Matemático · Professor",
+    "subtitle": "Engenheiro de Software · Tutor de Matemática",
     "presentation": {
       "title": "Apresentação",
-      "content": "Sou engenheiro de software com 17 anos de experiência, iniciando em ambiente de P&D na construção de sistemas embarcados para equipamentos de aquisição de dados e dispositivos eletromecânicos de precisão, migrando posteriormente para o desenvolvimento web. Estudei Engenharia Elétrica por três anos na UFSC e, em 2016, mudei para Matemática na mesma universidade, obtendo o bacharelado em 2019. Atualmente atuo como engenheiro back-end desenhando software escalável baseado em nuvem, com ênfase em Python, TypeScript e Java, e interesse particular em arquiteturas orientadas a eventos, projetos de motores de workflow e análise de complexidade. Trabalho a tempo parcial como professor particular de Matemática, sobretudo para alunos de graduação e ensino médio."
+      "content": "Sou engenheiro de software com 17 anos de experiência, iniciando em ambiente de P&D na construção de sistemas embarcados para equipamentos de aquisição de dados e dispositivos eletromecânicos de precisão, migrando posteriormente para o desenvolvimento web. Estudei Engenharia Elétrica por três anos na UFSC e, em 2016, mudei para Matemática na mesma universidade, obtendo o bacharelado em 2019. Atualmente atuo como engenheiro back-end desenhando software escalável baseado em nuvem, com ênfase em Python, TypeScript, Java e Go, e interesse particular em arquiteturas orientadas a eventos, projetos de motores de workflow e análise de complexidade. Trabalho a tempo parcial como professor particular de Matemática, sobretudo para alunos de graduação e ensino médio."
     },
     "specialties": {
       "title": "Especialidades",
@@ -21,7 +21,7 @@
         "Arquiteturas orientadas a eventos",
         "Desenho de motores de workflow",
         "Análise de complexidade (Big-O)",
-        "Desenvolvimento back-end escalável (Python, TypeScript, Java)",
+        "Desenvolvimento back-end escalável (Python, TypeScript, Java, Go)",
         "Sistemas embarcados e aquisição de dados",
         "Ensino de Matemática (Cálculo, Análise, Álgebra)"
       ]
