@@ -1,4 +1,4 @@
-# lwglg-portfolio-spa
+# portfolio-spa
 
 Página pessoal estática de Guilherme Gonçalves — Next.js (App Router), TypeScript, Zustand (arquitectura Flux), Neobrutalism UI, i18n (pt-BR / en-GB) e Yup.
 
@@ -34,7 +34,7 @@ Abre [http://localhost:3000](http://localhost:3000).
 
 ## Deploy (GitHub Pages)
 
-1. Crie o repositório `lwglg-portfolio-spa` sob a conta [lwglg](https://github.com/lwglg).
+1. Crie o repositório `portfolio-spa` sob a conta [lwglg](https://github.com/lwglg).
 2. Localmente: `pnpm install` (gera `pnpm-lock.yaml` — **commite o lockfile**) e valide:
    ```bash
    pnpm typecheck && pnpm lint && pnpm test && pnpm build
@@ -43,14 +43,14 @@ Abre [http://localhost:3000](http://localhost:3000).
 4. Faça push para a branch `main`. O workflow `.github/workflows/deploy.yml` publica em GitHub Pages.
 5. Em **Settings → Pages**, fonte **GitHub Actions**.
 
-URL esperada: `https://lwglg.github.io/lwglg-portfolio-spa/`
+URL esperada: `https://lwglg.github.io/portfolio-spa/`
 
 ### Checklist pré-deploy
 
 | Item                                          | Estado |
 | --------------------------------------------- | ------ |
 | `output: 'export'` + `trailingSlash: true`    | Sim    |
-| `basePath` `/lwglg-portfolio-spa` em produção | Sim    |
+| `basePath` `/portfolio-spa` em produção | Sim    |
 | `images.unoptimized: true`                    | Sim    |
 | `public/.nojekyll` + touch no CI              | Sim    |
 | Assets com `assetPath()` (logos, foto)        | Sim    |

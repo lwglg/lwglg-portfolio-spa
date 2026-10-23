@@ -6,10 +6,10 @@
 import type { Locale, Theme } from '@/types';
 
 /** GitHub Pages project base path (empty in local development). */
-export const APP_BASE_PATH = process.env.NODE_ENV === 'production' ? '/lwglg-portfolio-spa' : '';
+export const APP_BASE_PATH = process.env.NODE_ENV === 'production' ? '/portfolio-spa' : '';
 
 /** App package / display name */
-export const APP_NAME = 'lwglg-portfolio-spa';
+export const APP_NAME = 'portfolio-spa';
 
 /** Runtime versions shown on the About page (align with package.json / engines). */
 export const TYPESCRIPT_VERSION = '5.7';
