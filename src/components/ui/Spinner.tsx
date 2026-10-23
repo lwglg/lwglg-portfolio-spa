@@ -29,7 +29,7 @@ export function Spinner({ className, size = 'md', label }: SpinnerProps) {
       <span
         className={cn(
           'block animate-neo-spin rounded-base border-border bg-primary shadow-neo',
-          'border-t-transparent border-r-border border-b-border border-l-border',
+          'border-b-border border-l-border border-r-border border-t-transparent',
           sizeMap[size],
         )}
         aria-hidden

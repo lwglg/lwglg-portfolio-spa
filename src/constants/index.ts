@@ -6,8 +6,7 @@
 import type { Locale, Theme } from '@/types';
 
 /** GitHub Pages project base path (empty in local development). */
-export const APP_BASE_PATH =
-  process.env.NODE_ENV === 'production' ? '/lwglg-portfolio-spa' : '';
+export const APP_BASE_PATH = process.env.NODE_ENV === 'production' ? '/lwglg-portfolio-spa' : '';
 
 /** App package / display name */
 export const APP_NAME = 'lwglg-portfolio-spa';
@@ -56,13 +55,7 @@ export const COUNTRY_CODES: readonly CountryCodeOption[] = [
 ] as const;
 
 export type NavItemKey =
-  | 'home'
-  | 'experiences'
-  | 'education'
-  | 'skills'
-  | 'projects'
-  | 'about'
-  | 'contact';
+  'home' | 'experiences' | 'education' | 'skills' | 'projects' | 'about' | 'contact';
 
 export interface NavItem {
   href: string;

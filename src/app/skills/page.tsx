@@ -46,7 +46,7 @@ export default function SkillsPage() {
                       {levelItems.map((item) => (
                         <li
                           key={item.name}
-                          className="flex items-center justify-between gap-3 rounded-base border-2 border-border bg-muted/30 px-3 py-2 text-sm"
+                          className="bg-muted/30 flex items-center justify-between gap-3 rounded-base border-2 border-border px-3 py-2 text-sm"
                         >
                           <span className="font-bold">{item.name}</span>
                           <span className="shrink-0 rounded-base border-2 border-border bg-secondary px-2 py-0.5 text-xs font-bold text-secondary-foreground">
@@ -79,7 +79,7 @@ export default function SkillsPage() {
                         {group.items.map((item) => (
                           <span
                             key={item}
-                            className="rounded-base border-2 border-border bg-muted/40 px-3 py-1.5 text-sm font-medium text-foreground"
+                            className="bg-muted/40 rounded-base border-2 border-border px-3 py-1.5 text-sm font-medium text-foreground"
                           >
                             {item}
                           </span>

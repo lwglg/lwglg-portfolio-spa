@@ -25,7 +25,7 @@ export default function HomePage() {
             <CardTitle>{h.presentation.title}</CardTitle>
           </CardHeader>
           <CardContent>
-            <p className="leading-relaxed text-foreground/90">{h.presentation.content}</p>
+            <p className="text-foreground/90 leading-relaxed">{h.presentation.content}</p>
           </CardContent>
         </Card>
       </AnimateOnScroll>
@@ -39,7 +39,7 @@ export default function HomePage() {
             <div className="grid gap-2 sm:grid-cols-2">
               {h.specialties.items.map((item, i) => (
                 <AnimateOnScroll key={item} animation="fade-up" delay={80 + i * 50}>
-                  <div className="flex items-start gap-2 rounded-base border-2 border-border bg-muted/40 px-3 py-2 text-sm font-medium">
+                  <div className="bg-muted/40 flex items-start gap-2 rounded-base border-2 border-border px-3 py-2 text-sm font-medium">
                     <span className="mt-0.5 h-2 w-2 shrink-0 rounded-full bg-primary" />
                     {item}
                   </div>
@@ -57,7 +57,7 @@ export default function HomePage() {
               <CardTitle className="text-xl">{h.workRegime.title}</CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-sm leading-relaxed text-foreground/90">{h.workRegime.content}</p>
+              <p className="text-foreground/90 text-sm leading-relaxed">{h.workRegime.content}</p>
             </CardContent>
           </Card>
         </AnimateOnScroll>
@@ -67,7 +67,7 @@ export default function HomePage() {
               <CardTitle className="text-xl">{h.hiring.title}</CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-sm leading-relaxed text-foreground/90">{h.hiring.content}</p>
+              <p className="text-foreground/90 text-sm leading-relaxed">{h.hiring.content}</p>
             </CardContent>
           </Card>
         </AnimateOnScroll>

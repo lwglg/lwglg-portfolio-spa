@@ -5,10 +5,6 @@ const createJestConfig = nextJest({
   dir: './',
 });
 
-/**
- * Coverage is collected from modules that currently have unit tests.
- * Expand this list as new tests are added (target remains ≥ 80 %).
- */
 const config: Config = {
   coverageProvider: 'v8',
   testEnvironment: 'jsdom',
@@ -17,13 +13,17 @@ const config: Config = {
     '^@/(.*)$': '<rootDir>/src/$1',
   },
   collectCoverageFrom: [
-    'src/components/ui/Button.tsx',
-    'src/hooks/useInView.ts',
-    'src/i18n/index.ts',
-    'src/lib/utils.ts',
-    'src/schemas/contactSchema.ts',
-    'src/stores/contactStore.ts',
-    'src/stores/localeStore.ts',
+    'src/lib/**/*.{ts,tsx}',
+    'src/stores/**/*.{ts,tsx}',
+    'src/schemas/**/*.{ts,tsx}',
+    'src/actions/**/*.{ts,tsx}',
+    'src/hooks/**/*.{ts,tsx}',
+    'src/constants/**/*.{ts,tsx}',
+    'src/i18n/**/*.{ts,tsx}',
+    '!src/i18n/locales/**',
+    'src/components/ui/**/*.{ts,tsx}',
+    'src/components/shared/ConfirmationEmailTemplate.tsx',
+    'src/components/shared/ProjectTimeline.tsx',
   ],
   coverageThreshold: {
     global: {

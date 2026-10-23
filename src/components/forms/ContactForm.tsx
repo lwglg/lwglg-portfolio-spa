@@ -112,26 +112,22 @@ export function ContactForm() {
           <div className="grid gap-4 sm:grid-cols-[minmax(9.5rem,11rem)_1fr]">
             <div>
               <Label htmlFor="countryCode">{dict.contact.form.countryCode}</Label>
-              <Select
-                id="countryCode"
-                options={COUNTRY_CODES}
-                {...register('countryCode')}
-              />
+              <Select id="countryCode" options={COUNTRY_CODES} {...register('countryCode')} />
             </div>
             <div>
               <Label htmlFor="phone">{dict.contact.form.phone}</Label>
-              <Input
-                id="phone"
-                type="tel"
-                placeholder="11 98765-4321"
-                {...register('phone')}
-              />
+              <Input id="phone" type="tel" placeholder="11 98765-4321" {...register('phone')} />
             </div>
           </div>
 
           <div>
             <Label htmlFor="message">{dict.contact.form.message}</Label>
-            <Textarea id="message" rows={5} {...register('message')} aria-invalid={!!errors.message} />
+            <Textarea
+              id="message"
+              rows={5}
+              {...register('message')}
+              aria-invalid={!!errors.message}
+            />
             {errors.message && (
               <p className="mt-1 text-xs text-destructive">{errors.message.message}</p>
             )}

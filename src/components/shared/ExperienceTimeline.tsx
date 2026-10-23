@@ -105,8 +105,7 @@ function useDynamicRanges(yearRanges: YearRange[], items: ExperienceItem[]): Yea
       if (missing.some((m) => m.id === item.yearRangeId)) continue;
       const start = item.startYear ?? 0;
       const end = item.endYear ?? start;
-      const label =
-        end >= 9999 ? `${start} — …` : start === end ? `${start}` : `${start} — ${end}`;
+      const label = end >= 9999 ? `${start} — …` : start === end ? `${start}` : `${start} — ${end}`;
       missing.push({
         id: item.yearRangeId,
         label,
@@ -115,9 +114,7 @@ function useDynamicRanges(yearRanges: YearRange[], items: ExperienceItem[]): Yea
       });
     }
 
-    return [...fromConfig, ...missing].sort(
-      (a, b) => (b.startYear ?? 0) - (a.startYear ?? 0),
-    );
+    return [...fromConfig, ...missing].sort((a, b) => (b.startYear ?? 0) - (a.startYear ?? 0));
   }, [yearRanges, items]);
 }
 

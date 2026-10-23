@@ -11,10 +11,7 @@ import type { Dictionary } from '@/i18n';
  * In a real deployment you would POST to an API route or external service.
  * Builds a confirmation e-mail template in the same visual style.
  */
-export async function submitContactForm(
-  data: ContactFormData,
-  dict: Dictionary,
-): Promise<void> {
+export async function submitContactForm(data: ContactFormData, dict: Dictionary): Promise<void> {
   const { submitStart, submitSuccess, submitError } = useContactStore.getState();
 
   submitStart();

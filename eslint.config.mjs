@@ -23,10 +23,7 @@ const config = [
         'error',
         { argsIgnorePattern: '^_', varsIgnorePattern: '^_' },
       ],
-      '@typescript-eslint/consistent-type-imports': [
-        'error',
-        { prefer: 'type-imports' },
-      ],
+      '@typescript-eslint/consistent-type-imports': ['error', { prefer: 'type-imports' }],
       'react/jsx-curly-brace-presence': ['error', { props: 'never', children: 'never' }],
       'no-console': ['warn', { allow: ['warn', 'error'] }],
     },

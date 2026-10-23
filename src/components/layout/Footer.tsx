@@ -16,7 +16,7 @@ export function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="mt-auto border-t-2 border-border bg-muted/50">
+    <footer className="bg-muted/50 mt-auto border-t-2 border-border">
       <div className="mx-auto max-w-5xl px-4 py-8 text-center text-sm text-muted-foreground">
         <p className="font-bold text-foreground">{dict.footer.company}</p>
         <p className="mt-1">{dict.footer.cnpj}</p>

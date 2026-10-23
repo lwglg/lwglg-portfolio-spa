@@ -5,13 +5,7 @@ import { useInView } from '@/hooks/useInView';
 import { cn } from '@/lib/utils';
 
 export type ScrollAnimation =
-  | 'fade-up'
-  | 'fade-down'
-  | 'fade-left'
-  | 'fade-right'
-  | 'fade'
-  | 'scale'
-  | 'neo-pop';
+  'fade-up' | 'fade-down' | 'fade-left' | 'fade-right' | 'fade' | 'scale' | 'neo-pop';
 
 interface AnimateOnScrollProps extends HTMLAttributes<HTMLElement> {
   children: ReactNode;

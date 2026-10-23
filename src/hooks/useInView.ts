@@ -11,9 +11,7 @@ export interface UseInViewOptions {
   once?: boolean;
 }
 
-export function useInView<T extends HTMLElement = HTMLDivElement>(
-  options: UseInViewOptions = {},
-) {
+export function useInView<T extends HTMLElement = HTMLDivElement>(options: UseInViewOptions = {}) {
   const { threshold = 0.15, rootMargin = '0px 0px -40px 0px', once = true } = options;
   const ref = useRef<T | null>(null);
   const [inView, setInView] = useState(false);
@@ -23,7 +21,10 @@ export function useInView<T extends HTMLElement = HTMLDivElement>(
     if (!el) return;
 
     // Prefer reduced motion: show immediately
-    if (typeof window !== 'undefined' && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    if (
+      typeof window !== 'undefined' &&
+      window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    ) {
       setInView(true);
       return;
     }

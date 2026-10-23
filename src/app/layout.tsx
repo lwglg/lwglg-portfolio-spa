@@ -37,7 +37,9 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="pt-BR" suppressHydrationWarning>
-      <body className={`${archivoBlack.variable} ${spaceGrotesk.variable} min-h-screen flex flex-col`}>
+      <body
+        className={`${archivoBlack.variable} ${spaceGrotesk.variable} flex min-h-screen flex-col`}
+      >
         <ThemeProvider>
           <GlobalLoading />
           <Header />

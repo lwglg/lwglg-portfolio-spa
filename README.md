@@ -23,14 +23,14 @@ Abre [http://localhost:3000](http://localhost:3000).
 
 ## Scripts
 
-| Comando | Descrição |
-|---------|-----------|
-| `pnpm dev` | Servidor de desenvolvimento |
-| `pnpm build` | Build estático (`out/`) para GitHub Pages |
-| `pnpm test` | Testes unitários com cobertura ≥ 80 % |
-| `pnpm lint` | ESLint (`eslint.config.mjs`) |
-| `pnpm format` | Prettier (`.prettierrc.cjs`) |
-| `pnpm typecheck` | Verificação TypeScript |
+| Comando          | Descrição                                 |
+| ---------------- | ----------------------------------------- |
+| `pnpm dev`       | Servidor de desenvolvimento               |
+| `pnpm build`     | Build estático (`out/`) para GitHub Pages |
+| `pnpm test`      | Testes unitários com cobertura ≥ 80 %     |
+| `pnpm lint`      | ESLint (`eslint.config.mjs`)              |
+| `pnpm format`    | Prettier (`.prettierrc.cjs`)              |
+| `pnpm typecheck` | Verificação TypeScript                    |
 
 ## Deploy (GitHub Pages)
 
@@ -47,15 +47,15 @@ URL esperada: `https://lwglg.github.io/lwglg-portfolio-spa/`
 
 ### Checklist pré-deploy
 
-| Item | Estado |
-|------|--------|
-| `output: 'export'` + `trailingSlash: true` | Sim |
-| `basePath` `/lwglg-portfolio-spa` em produção | Sim |
-| `images.unoptimized: true` | Sim |
-| `public/.nojekyll` + touch no CI | Sim |
-| Assets com `assetPath()` (logos, foto) | Sim |
-| Favicon `gg-ltda.svg` | Sim |
-| Workflow Pages (build → upload → deploy) | Sim |
+| Item                                          | Estado |
+| --------------------------------------------- | ------ |
+| `output: 'export'` + `trailingSlash: true`    | Sim    |
+| `basePath` `/lwglg-portfolio-spa` em produção | Sim    |
+| `images.unoptimized: true`                    | Sim    |
+| `public/.nojekyll` + touch no CI              | Sim    |
+| Assets com `assetPath()` (logos, foto)        | Sim    |
+| Favicon `gg-ltda.svg`                         | Sim    |
+| Workflow Pages (build → upload → deploy)      | Sim    |
 
 ## Arquitectura
 

@@ -6,12 +6,7 @@ import { getDictionary } from '@/i18n';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/Card';
 import { AnimateOnScroll } from '@/components/shared/AnimateOnScroll';
 import { assetPath } from '@/lib/asset';
-import {
-  TYPESCRIPT_VERSION,
-  NODE_VERSION,
-  SOCIAL_LINKS,
-  ASSET_PATHS,
-} from '@/constants';
+import { TYPESCRIPT_VERSION, NODE_VERSION, SOCIAL_LINKS, ASSET_PATHS } from '@/constants';
 
 export default function AboutPage() {
   const locale = useLocaleStore((s) => s.locale);
@@ -43,8 +38,7 @@ export default function AboutPage() {
             </div>
             <div className="flex flex-wrap gap-2">
               {SOCIAL_LINKS.map(({ key, href, icon }) => {
-                const Icon =
-                  icon === 'github' ? Github : icon === 'linkedin' ? Linkedin : BookOpen;
+                const Icon = icon === 'github' ? Github : icon === 'linkedin' ? Linkedin : BookOpen;
                 return (
                   <a
                     key={key}
@@ -103,7 +97,7 @@ export default function AboutPage() {
                 </ul>
               </div>
 
-              <p className="rounded-base border-2 border-border bg-muted/40 px-3 py-2 text-muted-foreground">
+              <p className="bg-muted/40 rounded-base border-2 border-border px-3 py-2 text-muted-foreground">
                 {a.architectureNote}
               </p>
             </CardContent>

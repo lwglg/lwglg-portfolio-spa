@@ -22,10 +22,8 @@ export function LoadingOverlay({
   return (
     <div
       className={cn(
-        'flex items-center justify-center bg-background/80 backdrop-blur-sm',
-        fullscreen
-          ? 'fixed inset-0 z-[100]'
-          : 'absolute inset-0 z-10 rounded-base',
+        'bg-background/80 flex items-center justify-center backdrop-blur-sm',
+        fullscreen ? 'fixed inset-0 z-[100]' : 'absolute inset-0 z-10 rounded-base',
         className,
       )}
       role="alert"

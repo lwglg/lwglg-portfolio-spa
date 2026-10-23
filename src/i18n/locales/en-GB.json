@@ -309,15 +309,70 @@
     ]
   },
   "projects": {
+    "yearRanges": [
+      {
+        "id": "2026",
+        "label": "2026",
+        "startYear": 2026,
+        "endYear": 2026
+      },
+      {
+        "id": "2025",
+        "label": "2025",
+        "startYear": 2025,
+        "endYear": 2025
+      },
+      {
+        "id": "2022",
+        "label": "2022",
+        "startYear": 2022,
+        "endYear": 2022
+      }
+    ],
     "title": "Personal Projects",
+    "subtitle": "Proofs of concept, tools and technical publications",
+    "menuLabel": "Period",
+    "allLabel": "All",
     "items": [
       {
+        "id": "cvtex",
+        "yearRangeId": "2026",
+        "year": "2026",
+        "title": "CVTeX",
+        "description": "Software platform written in Python and PyQt5 for user-friendly curriculum vitae (CV) creation, generating properly formatted PDF documents with LaTeX.",
+        "repoUrl": "https://github.com/lwglg/cvtex",
+        "articleUrl": null,
+        "technologies": ["Python", "PyQt5", "LaTeX", "PDF"]
+      },
+      {
+        "id": "nld-img-heat-map",
+        "yearRangeId": "2025",
+        "year": "2025",
+        "title": "NLD :: Image Analysis API",
+        "description": "Web service that provides a RESTful API for image inspection and analysis in the context of property security.",
+        "repoUrl": "https://github.com/lwglg/nld-img-heat-map",
+        "articleUrl": null,
+        "technologies": ["REST API", "Image processing", "Property security"]
+      },
+      {
+        "id": "gefuehlmesser",
+        "yearRangeId": "2025",
+        "year": "2025",
+        "title": "Gefuehlmesser — Sentiment Meter",
+        "description": "Software platform built to perform real-time sentiment analysis, processing feed messages to compute engagement metrics using deterministic algorithms.",
+        "repoUrl": "https://github.com/lwglg/gefuehlmesser",
+        "articleUrl": null,
+        "technologies": ["Sentiment analysis", "Real-time", "Deterministic algorithms"]
+      },
+      {
         "id": "empirical-tc",
+        "yearRangeId": "2022",
+        "year": "2022",
         "title": "Experimental determination of algorithmic time complexity",
         "description": "Article published in the Better Programming newsletter (Medium) in 2022. Investigates an experimental method for determining the time complexity of algorithms in TypeScript running on Node.js. The proof-of-concept project evaluates time ratios for the classical merge-sort implementation.",
         "articleUrl": "https://medium.com/better-programming/determining-time-complexity-of-algorithms-experimentally-4f844a5080ec",
         "repoUrl": "https://github.com/guligon90/empirical-tc-ts",
-        "year": "2022"
+        "technologies": ["TypeScript", "Node.js", "Algorithmic complexity", "Merge-sort"]
       }
     ]
   },
@@ -455,9 +510,7 @@
           "description": [
             "Student Union (2006–2007): member of the committee for integration between high-school and HVAC students."
           ],
-          "topics": [
-            "Student Union"
-          ],
+          "topics": ["Student Union"],
           "credentialUrl": null
         }
       ]
@@ -500,14 +553,8 @@
           "period": "2026",
           "location": "Joinville/SC, Brazil",
           "logoSrc": "/logos/udesc.svg",
-          "description": [
-            "Graduate Programme in Electrical Engineering."
-          ],
-          "topics": [
-            "AI",
-            "Machine Learning",
-            "Power Systems"
-          ],
+          "description": ["Graduate Programme in Electrical Engineering."],
+          "topics": ["AI", "Machine Learning", "Power Systems"],
           "credentialUrl": "https://tinyurl.com/2acjbtes"
         },
         {
@@ -520,12 +567,8 @@
           "period": "2022",
           "location": "Online",
           "logoSrc": "/logos/efset.svg",
-          "description": [
-            "English proficiency certification at C2 level."
-          ],
-          "topics": [
-            "English C2"
-          ],
+          "description": ["English proficiency certification at C2 level."],
+          "topics": ["English C2"],
           "credentialUrl": "https://cert.efset.org/1Gpuan"
         },
         {
@@ -538,13 +581,8 @@
           "period": "2017",
           "location": "Florianópolis/SC, Brazil",
           "logoSrc": "/logos/ufsc.svg",
-          "description": [
-            "Teaching assistantship in mathematics courses."
-          ],
-          "topics": [
-            "Teaching",
-            "Calculus"
-          ],
+          "description": ["Teaching assistantship in mathematics courses."],
+          "topics": ["Teaching", "Calculus"],
           "credentialUrl": "https://tinyurl.com/56rdvf3s"
         },
         {
@@ -557,13 +595,8 @@
           "period": "2017",
           "location": "Florianópolis/SC, Brazil",
           "logoSrc": "/logos/ufsc.svg",
-          "description": [
-            "Teaching assistantship in mathematics courses."
-          ],
-          "topics": [
-            "Teaching",
-            "Calculus"
-          ],
+          "description": ["Teaching assistantship in mathematics courses."],
+          "topics": ["Teaching", "Calculus"],
           "credentialUrl": "https://tinyurl.com/4fjywn45"
         },
         {
@@ -576,13 +609,8 @@
           "period": "2016",
           "location": "Florianópolis/SC, Brazil",
           "logoSrc": "/logos/ufsc.svg",
-          "description": [
-            "Teaching assistantship in mathematics courses."
-          ],
-          "topics": [
-            "Teaching",
-            "Calculus"
-          ],
+          "description": ["Teaching assistantship in mathematics courses."],
+          "topics": ["Teaching", "Calculus"],
           "credentialUrl": "https://tinyurl.com/23hrbbsw"
         },
         {
@@ -595,13 +623,8 @@
           "period": "2016",
           "location": "Florianópolis/SC, Brazil",
           "logoSrc": "/logos/ufsc.svg",
-          "description": [
-            "Teaching assistantship in mathematics courses."
-          ],
-          "topics": [
-            "Teaching",
-            "Calculus"
-          ],
+          "description": ["Teaching assistantship in mathematics courses."],
+          "topics": ["Teaching", "Calculus"],
           "credentialUrl": "https://tinyurl.com/kpf35ttr"
         },
         {
@@ -614,14 +637,8 @@
           "period": "2012",
           "location": "Florianópolis/SC, Brazil",
           "logoSrc": "/logos/ufsc.svg",
-          "description": [
-            "Extension course on audio filters and effects."
-          ],
-          "topics": [
-            "Audio",
-            "Filters",
-            "Electronics"
-          ],
+          "description": ["Extension course on audio filters and effects."],
+          "topics": ["Audio", "Filters", "Electronics"],
           "credentialUrl": "https://tinyurl.com/46zjjwhu"
         }
       ]

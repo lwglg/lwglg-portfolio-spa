@@ -55,11 +55,5 @@ export function GlobalLoading() {
 
   if (!isLoading) return null;
 
-  return (
-    <LoadingOverlay
-      visible
-      label={label ?? dict.loading?.default}
-      fullscreen
-    />
-  );
+  return <LoadingOverlay visible label={label ?? dict.loading?.default} fullscreen />;
 }

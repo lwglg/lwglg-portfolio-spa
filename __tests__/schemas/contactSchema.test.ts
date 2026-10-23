@@ -7,7 +7,7 @@ const schema = createContactSchema(dict);
 describe('createContactSchema', () => {
   it('accepts valid full payload', async () => {
     const data = {
-      firstName: "José",
+      firstName: 'José',
       lastName: "O'Connor-Silva",
       email: 'jose@example.com',
       organisation: 'Acme Ltda',

@@ -13,7 +13,7 @@
     "subtitle": "Engenheiro de Software · Matemático · Professor",
     "presentation": {
       "title": "Apresentação",
-      "content": "Sou engenheiro de software com 15 anos de experiência, iniciando em ambiente de P&D na construção de sistemas embarcados para equipamentos de aquisição de dados e dispositivos eletromecânicos de precisão, migrando posteriormente para o desenvolvimento web. Estudei Engenharia Elétrica por três anos na UFSC e, em 2016, mudei para Matemática na mesma universidade, obtendo o bacharelado em 2019. Atualmente atuo como engenheiro back-end desenhando software escalável baseado em nuvem, com ênfase em Python, TypeScript e Java, e interesse particular em arquiteturas orientadas a eventos, projetos de motores de workflow e análise de complexidade. Trabalho a tempo parcial como professor particular de Matemática, sobretudo para alunos de graduação e ensino médio."
+      "content": "Sou engenheiro de software com 17 anos de experiência, iniciando em ambiente de P&D na construção de sistemas embarcados para equipamentos de aquisição de dados e dispositivos eletromecânicos de precisão, migrando posteriormente para o desenvolvimento web. Estudei Engenharia Elétrica por três anos na UFSC e, em 2016, mudei para Matemática na mesma universidade, obtendo o bacharelado em 2019. Atualmente atuo como engenheiro back-end desenhando software escalável baseado em nuvem, com ênfase em Python, TypeScript e Java, e interesse particular em arquiteturas orientadas a eventos, projetos de motores de workflow e análise de complexidade. Trabalho a tempo parcial como professor particular de Matemática, sobretudo para alunos de graduação e ensino médio."
     },
     "specialties": {
       "title": "Especialidades",
@@ -309,15 +309,70 @@
     ]
   },
   "projects": {
+    "yearRanges": [
+      {
+        "id": "2026",
+        "label": "2026",
+        "startYear": 2026,
+        "endYear": 2026
+      },
+      {
+        "id": "2025",
+        "label": "2025",
+        "startYear": 2025,
+        "endYear": 2025
+      },
+      {
+        "id": "2022",
+        "label": "2022",
+        "startYear": 2022,
+        "endYear": 2022
+      }
+    ],
     "title": "Projetos Pessoais",
+    "subtitle": "Provas de conceito, ferramentas e publicações técnicas",
+    "menuLabel": "Período",
+    "allLabel": "Todos",
     "items": [
       {
+        "id": "cvtex",
+        "yearRangeId": "2026",
+        "year": "2026",
+        "title": "CVTeX",
+        "description": "Plataforma de software, escrita em Python e PyQt5, para criação de currículos (CVs) de forma amigável ao usuário, gerando documentos PDF com formatação adequada utilizando LaTeX.",
+        "repoUrl": "https://github.com/lwglg/cvtex",
+        "articleUrl": null,
+        "technologies": ["Python", "PyQt5", "LaTeX", "PDF"]
+      },
+      {
+        "id": "nld-img-heat-map",
+        "yearRangeId": "2025",
+        "year": "2025",
+        "title": "NLD — Image Analysis API",
+        "description": "Web service que fornece uma API RESTful para a inspeção e análise de imagens, no contexto de segurança patrimonial.",
+        "repoUrl": "https://github.com/lwglg/nld-img-heat-map",
+        "articleUrl": null,
+        "technologies": ["API REST", "Processamento de imagens", "Segurança patrimonial"]
+      },
+      {
+        "id": "gefuehlmesser",
+        "yearRangeId": "2025",
+        "year": "2025",
+        "title": "Gefuehlmesser — Medidor de Sentimentos",
+        "description": "Plataforma de software construída para realizar análises de sentimentos, em tempo real, processando mensagens de feeds para calcular métricas de engajamento usando algoritmos determinísticos.",
+        "repoUrl": "https://github.com/lwglg/gefuehlmesser",
+        "articleUrl": null,
+        "technologies": ["Análise de sentimentos", "Tempo real", "Algoritmos determinísticos"]
+      },
+      {
         "id": "empirical-tc",
-        "title": "Determinação experimental de complexidade temporal de algoritmos",
-        "description": "Artigo publicado na newsletter Better Programming (Medium) em 2022. Investiga um método experimental para determinação de complexidade temporal de algoritmos em TypeScript, executando em Node.js. O projeto de prova de conceito avalia razões de tempo para a implementação clássica do merge sort.",
+        "yearRangeId": "2022",
+        "year": "2022",
+        "title": "empirical-tc-ts — Determinação experimental de complexidade temporal de algoritmos",
+        "description": "Artigo publicado na newsletter Better Programming (Medium) em 2022. Investiga um método experimental para determinar a complexidade temporal de algoritmos em TypeScript, executados em Node.js. O projeto de prova de conceito avalia razões de tempo para a implementação clássica do merge-sort.",
         "articleUrl": "https://medium.com/better-programming/determining-time-complexity-of-algorithms-experimentally-4f844a5080ec",
         "repoUrl": "https://github.com/guligon90/empirical-tc-ts",
-        "year": "2022"
+        "technologies": ["TypeScript", "Node.js", "Complexidade algorítmica", "Merge-sort"]
       }
     ]
   },
@@ -455,9 +510,7 @@
           "description": [
             "Grêmio Estudantil (2006–2007): membro do núcleo de integração com o curso técnico de Refrigeração e Climatização (RAC)."
           ],
-          "topics": [
-            "Grêmio Estudantil"
-          ],
+          "topics": ["Grêmio Estudantil"],
           "credentialUrl": null
         }
       ]
@@ -500,14 +553,8 @@
           "period": "2026",
           "location": "Joinville/SC, Brasil",
           "logoSrc": "/logos/udesc.svg",
-          "description": [
-            "Programa de Pós-Graduação em Engenharia Elétrica."
-          ],
-          "topics": [
-            "IA",
-            "Aprendizado de Máquina",
-            "Sistemas de Potência"
-          ],
+          "description": ["Programa de Pós-Graduação em Engenharia Elétrica."],
+          "topics": ["IA", "Aprendizado de Máquina", "Sistemas de Potência"],
           "credentialUrl": "https://tinyurl.com/2acjbtes"
         },
         {
@@ -520,12 +567,8 @@
           "period": "2022",
           "location": "Online",
           "logoSrc": "/logos/efset.svg",
-          "description": [
-            "Certificação de proficiência em inglês no nível C2."
-          ],
-          "topics": [
-            "Inglês C2"
-          ],
+          "description": ["Certificação de proficiência em inglês no nível C2."],
+          "topics": ["Inglês C2"],
           "credentialUrl": "https://cert.efset.org/1Gpuan"
         },
         {
@@ -538,13 +581,8 @@
           "period": "2017",
           "location": "Florianópolis/SC, Brasil",
           "logoSrc": "/logos/ufsc.svg",
-          "description": [
-            "Monitoria em disciplinas de matemática."
-          ],
-          "topics": [
-            "Monitoria",
-            "Cálculo"
-          ],
+          "description": ["Monitoria em disciplinas de matemática."],
+          "topics": ["Monitoria", "Cálculo"],
           "credentialUrl": "https://tinyurl.com/56rdvf3s"
         },
         {
@@ -557,13 +595,8 @@
           "period": "2017",
           "location": "Florianópolis/SC, Brasil",
           "logoSrc": "/logos/ufsc.svg",
-          "description": [
-            "Monitoria em disciplinas de matemática."
-          ],
-          "topics": [
-            "Monitoria",
-            "Cálculo"
-          ],
+          "description": ["Monitoria em disciplinas de matemática."],
+          "topics": ["Monitoria", "Cálculo"],
           "credentialUrl": "https://tinyurl.com/4fjywn45"
         },
         {
@@ -576,13 +609,8 @@
           "period": "2016",
           "location": "Florianópolis/SC, Brasil",
           "logoSrc": "/logos/ufsc.svg",
-          "description": [
-            "Monitoria em disciplinas de matemática."
-          ],
-          "topics": [
-            "Monitoria",
-            "Cálculo"
-          ],
+          "description": ["Monitoria em disciplinas de matemática."],
+          "topics": ["Monitoria", "Cálculo"],
           "credentialUrl": "https://tinyurl.com/23hrbbsw"
         },
         {
@@ -595,13 +623,8 @@
           "period": "2016",
           "location": "Florianópolis/SC, Brasil",
           "logoSrc": "/logos/ufsc.svg",
-          "description": [
-            "Monitoria em disciplinas de matemática."
-          ],
-          "topics": [
-            "Monitoria",
-            "Cálculo"
-          ],
+          "description": ["Monitoria em disciplinas de matemática."],
+          "topics": ["Monitoria", "Cálculo"],
           "credentialUrl": "https://tinyurl.com/kpf35ttr"
         },
         {
@@ -614,14 +637,8 @@
           "period": "2012",
           "location": "Florianópolis/SC, Brasil",
           "logoSrc": "/logos/ufsc.svg",
-          "description": [
-            "Curso de extensão em filtros e efeitos de áudio."
-          ],
-          "topics": [
-            "Áudio",
-            "Filtros",
-            "Eletrônica"
-          ],
+          "description": ["Curso de extensão em filtros e efeitos de áudio."],
+          "topics": ["Áudio", "Filtros", "Eletrônica"],
           "credentialUrl": "https://tinyurl.com/46zjjwhu"
         }
       ]
