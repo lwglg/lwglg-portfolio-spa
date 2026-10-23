@@ -1,5 +1,7 @@
 import type { Metadata } from 'next';
 import { Archivo_Black, Space_Grotesk } from 'next/font/google';
+import { assetPath } from '@/lib/asset';
+import { ASSET_PATHS } from '@/constants';
 import { ThemeProvider } from '@/components/layout/ThemeProvider';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
@@ -19,8 +21,6 @@ const spaceGrotesk = Space_Grotesk({
   display: 'swap',
 });
 
-const repoName = process.env.NODE_ENV === 'production' ? '/personal-spa' : '';
-
 export const metadata: Metadata = {
   title: {
     default: 'Guilherme Gonçalves — Software Engineer',
@@ -29,9 +29,9 @@ export const metadata: Metadata = {
   description: 'Personal page of Guilherme Gonçalves',
   authors: [{ name: 'Guilherme Gonçalves' }],
   icons: {
-    icon: [{ url: `${repoName}/logos/gg-ltda.svg`, type: 'image/svg+xml' }],
-    shortcut: `${repoName}/logos/gg-ltda.svg`,
-    apple: `${repoName}/logos/gg-ltda.svg`,
+    icon: [{ url: assetPath(ASSET_PATHS.favicon), type: 'image/svg+xml' }],
+    shortcut: assetPath(ASSET_PATHS.favicon),
+    apple: assetPath(ASSET_PATHS.favicon),
   },
 };
 
