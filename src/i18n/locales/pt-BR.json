@@ -716,7 +716,7 @@
             "title": "Computação Científica",
             "items": [
               "Análise assintótica (Big-O)",
-              "Determinação de complexidade temporal e espacial e espacial de algoritmos",
+              "Determinação de complexidade temporal e espacial de algoritmos",
               "Métodos experimentais para estimativa de complexidade"
             ]
           },
