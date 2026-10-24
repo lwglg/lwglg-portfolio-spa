@@ -37,7 +37,9 @@ export const useThemeStore = create<ThemeStore>((set, get) => ({
 
 export function hydrateThemeStore() {
   if (typeof window === 'undefined') return;
+  
   const stored = localStorage.getItem(STORAGE_KEYS.theme) as Theme | null;
+  
   if (stored && (THEMES as readonly string[]).includes(stored)) {
     useThemeStore.getState().setTheme(stored);
   }

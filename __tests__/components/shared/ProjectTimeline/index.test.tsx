@@ -45,7 +45,7 @@ describe('ProjectTimeline', () => {
     );
     expect(screen.getByText('CVTeX')).toBeInTheDocument();
     expect(screen.getByText('NLD')).toBeInTheDocument();
-    fireEvent.click(screen.getByText('2026'));
+    fireEvent.click(screen.getByRole('button', { name: /2026/ }));
     expect(screen.getByText('CVTeX')).toBeInTheDocument();
     expect(screen.queryByText('NLD')).not.toBeInTheDocument();
   });

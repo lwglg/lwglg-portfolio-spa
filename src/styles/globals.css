@@ -4,15 +4,16 @@
 
 @layer base {
   :root {
-    --background: #fffbf0;
+    /* Soft warm yellow — easier on the eyes than pure white */
+    --background: #f5e8b2;
     --foreground: #000000;
-    --card: #ffffff;
+    --card: #fbf6e3;
     --card-foreground: #000000;
     --primary: #ffdb33;
     --primary-foreground: #000000;
     --secondary: #a3e635;
     --secondary-foreground: #000000;
-    --muted: #f5f5f4;
+    --muted: #efe6c4;
     --muted-foreground: #525252;
     --accent: #67e8f9;
     --accent-foreground: #000000;
@@ -53,7 +54,7 @@
   }
 
   body {
-    @apply bg-background font-sans text-foreground antialiased;
+    @apply bg-background text-foreground font-sans antialiased;
   }
 
   h1,
@@ -76,15 +77,20 @@
   }
 
   .neo-card {
-    @apply neo-border neo-shadow rounded-base bg-card p-6 text-card-foreground;
+    @apply neo-border neo-shadow bg-card text-card-foreground rounded-base p-6;
   }
 
   .neo-button {
-    @apply neo-border neo-shadow inline-flex items-center justify-center gap-2 rounded-base bg-primary px-4 py-2 font-head font-bold text-primary-foreground transition-all hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-neo-sm active:translate-x-[4px] active:translate-y-[4px] active:shadow-none disabled:pointer-events-none disabled:opacity-50;
+    @apply neo-border neo-shadow inline-flex items-center justify-center gap-2 rounded-base
+      bg-primary px-4 py-2 font-head font-bold text-primary-foreground transition-all
+      hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-neo-sm
+      active:translate-x-[4px] active:translate-y-[4px] active:shadow-none
+      disabled:pointer-events-none disabled:opacity-50;
   }
 
   .neo-input {
-    @apply neo-border w-full rounded-base bg-background px-3 py-2 text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring;
+    @apply neo-border w-full rounded-base bg-background px-3 py-2 text-foreground
+      placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring;
   }
 
   .neo-label {
@@ -150,6 +156,7 @@
     box-shadow: inherit;
   }
 }
+
 
 /* ── Neobrutalism spinner ──────────────────────────────────────────── */
 @keyframes neo-spin {
