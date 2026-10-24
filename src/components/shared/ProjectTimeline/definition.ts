@@ -1,7 +1,14 @@
+import type { YearRange } from '@/components/shared/timeline';
+
+export type { YearRange };
+
 export interface ProjectItem {
   id: string;
   yearRangeId: string;
+  /** Display year label (e.g. "2026") */
   year: string;
+  startYear?: number;
+  endYear?: number;
   title: string;
   description: string;
   repoUrl?: string | null;
@@ -9,16 +16,11 @@ export interface ProjectItem {
   technologies?: string[];
 }
 
-export interface ProjectYearRange {
-  id: string;
-  label: string;
-  year: number;
-}
-
 export interface ProjectTimelineProps {
   title: string;
   subtitle: string;
   menuLabel: string;
   allLabel: string;
+  yearRanges: YearRange[];
   items: ProjectItem[];
 }

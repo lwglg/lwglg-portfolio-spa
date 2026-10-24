@@ -21,14 +21,18 @@ const config: Config = {
     'src/constants/**/*.{ts,tsx}',
     'src/i18n/**/*.{ts,tsx}',
     '!src/i18n/locales/**',
-    'src/types/**/*.{ts,tsx}',
     'src/components/ui/**/*.{ts,tsx}',
     'src/components/shared/**/*.{ts,tsx}',
     'src/components/layout/LanguageSelect.tsx',
     'src/components/layout/ThemeToggle.tsx',
     'src/components/layout/Footer.tsx',
     'src/components/layout/GlobalLoading.tsx',
-    // Exclude thin page shells and heavy form (covered via schema/actions/stores)
+    // Type-only modules (no runtime coverage)
+    '!src/types/**',
+    '!src/components/shared/**/definition.ts',
+    '!src/components/shared/timeline/types.ts',
+    '!src/components/shared/timeline/index.ts',
+    // Thin shells / integration
     '!src/app/**',
     '!src/components/forms/**',
     '!src/components/layout/Header.tsx',

@@ -13,7 +13,7 @@ describe('createContactSchema', () => {
       organisation: 'Acme Ltda',
       countryCode: '+55',
       phone: '11987654321',
-      message: 'Olá, gostaria de conversar sobre um projeto.',
+      message: 'Olá, gostaria de conversar sobre um projecto.',
     };
     await expect(schema.validate(data)).resolves.toMatchObject(data);
   });

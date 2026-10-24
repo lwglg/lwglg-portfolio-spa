@@ -1,27 +1,28 @@
-import type { ProjectItem, ProjectYearRange } from './definition';
+import type { YearRange } from '@/components/shared/timeline';
+import { buildDynamicYearRanges, filterByYearRange } from '@/components/shared/timeline';
 
-/** Build unique year ranges from projects, newest first. */
-export function buildProjectYearRanges(items: ProjectItem[]): ProjectYearRange[] {
-  const byId = new Map<string, ProjectYearRange>();
-  for (const item of items) {
-    if (byId.has(item.yearRangeId)) continue;
-    const year = Number.parseInt(item.year, 10) || 0;
-    byId.set(item.yearRangeId, {
-      id: item.yearRangeId,
-      label: item.year,
-      year,
-    });
-  }
-  return [...byId.values()].sort((a, b) => b.year - a.year);
+import type { ProjectItem } from './definition';
+
+function withYears(items: ProjectItem[]): ProjectItem[] {
+  return items.map((item) => {
+    const y = (item.startYear ?? Number.parseInt(item.year, 10)) || 0;
+    return {
+      ...item,
+      startYear: y,
+      endYear: item.endYear ?? y,
+    };
+  });
 }
 
-/** Filter projects by active range id (`all` = no filter). */
+/**
+ * Build menu year ranges from configured ranges + items (same algorithm as experiences).
+ * Exported for unit tests.
+ */
+export function buildProjectYearRanges(yearRanges: YearRange[], items: ProjectItem[]): YearRange[] {
+  return buildDynamicYearRanges(yearRanges, withYears(items));
+}
+
+/** Filter projects by active range id (`all` = no filter). Exported for unit tests. */
 export function filterProjectsByYear(items: ProjectItem[], activeRange: string): ProjectItem[] {
-  const list =
-    activeRange === 'all' ? items : items.filter((item) => item.yearRangeId === activeRange);
-  return [...list].sort((a, b) => {
-    const ya = Number.parseInt(a.year, 10) || 0;
-    const yb = Number.parseInt(b.year, 10) || 0;
-    return yb - ya;
-  });
+  return filterByYearRange(withYears(items), activeRange);
 }

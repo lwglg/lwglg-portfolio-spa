@@ -6,7 +6,7 @@ import type { ProjectTimelineProps } from './definition';
 import { renderProjectCards } from './helpers';
 import { useProjectTimeline } from './hooks';
 
-export type { ProjectItem, ProjectTimelineProps, ProjectYearRange } from './definition';
+export type { ProjectItem, ProjectTimelineProps, YearRange } from './definition';
 export { buildProjectYearRanges, filterProjectsByYear } from './yearHelpers';
 
 export function ProjectTimeline({
@@ -14,10 +14,10 @@ export function ProjectTimeline({
   subtitle,
   menuLabel,
   allLabel,
+  yearRanges,
   items,
 }: ProjectTimelineProps) {
-  const { yearRanges, activeRange, setActiveRange, filtered, itemsForMenu } =
-    useProjectTimeline(items);
+  const { ranges, activeRange, setActiveRange, filtered } = useProjectTimeline(yearRanges, items);
 
   return (
     <div className="mx-auto max-w-5xl space-y-8">
@@ -27,8 +27,8 @@ export function ProjectTimeline({
         <TimelineSideMenu
           menuLabel={menuLabel}
           allLabel={allLabel}
-          ranges={yearRanges}
-          items={itemsForMenu}
+          ranges={ranges}
+          items={items}
           activeRange={activeRange}
           onSelectRange={setActiveRange}
         />

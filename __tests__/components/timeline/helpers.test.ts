@@ -35,8 +35,12 @@ describe('buildDynamicYearRanges', () => {
     const ids = result.map((r) => r.id);
     expect(ids).toContain('2020-present');
     expect(ids).toContain('2015-solo');
-    expect(ids).not.toContain('2018-2019'); // no items
+    expect(ids).not.toContain('2018-2019');
     expect(result[0].startYear).toBeGreaterThanOrEqual(result[result.length - 1].startYear ?? 0);
+  });
+
+  it('returns empty when no items', () => {
+    expect(buildDynamicYearRanges(ranges, [])).toEqual([]);
   });
 });
 

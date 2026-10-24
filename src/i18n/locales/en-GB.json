@@ -342,7 +342,9 @@
         "description": "Software platform written in Python and PyQt5 for user-friendly curriculum vitae (CV) creation, generating properly formatted PDF documents with LaTeX.",
         "repoUrl": "https://github.com/lwglg/cvtex",
         "articleUrl": null,
-        "technologies": ["Python", "PyQt5", "LaTeX", "PDF"]
+        "technologies": ["Python", "PyQt5", "LaTeX", "PDF"],
+        "startYear": 2026,
+        "endYear": 2026
       },
       {
         "id": "nld-img-heat-map",
@@ -352,7 +354,9 @@
         "description": "Web service that provides a RESTful API for image inspection and analysis in the context of property security.",
         "repoUrl": "https://github.com/lwglg/nld-img-heat-map",
         "articleUrl": null,
-        "technologies": ["REST API", "Image processing", "Property security"]
+        "technologies": ["REST API", "Image processing", "Property security"],
+        "startYear": 2025,
+        "endYear": 2025
       },
       {
         "id": "gefuehlmesser",
@@ -362,7 +366,9 @@
         "description": "Software platform built to perform real-time sentiment analysis, processing feed messages to compute engagement metrics using deterministic algorithms.",
         "repoUrl": "https://github.com/lwglg/gefuehlmesser",
         "articleUrl": null,
-        "technologies": ["Sentiment analysis", "Real-time", "Deterministic algorithms"]
+        "technologies": ["Sentiment analysis", "Real-time", "Deterministic algorithms"],
+        "startYear": 2025,
+        "endYear": 2025
       },
       {
         "id": "empirical-tc",
@@ -372,7 +378,9 @@
         "description": "Article published in the Better Programming newsletter (Medium) in 2022. Investigates an experimental method for determining the time and spatial complexity of algorithms in TypeScript running on Node.js. The proof-of-concept project evaluates time ratios for the classical merge-sort implementation.",
         "articleUrl": "https://medium.com/better-programming/determining-time-complexity-of-algorithms-experimentally-4f844a5080ec",
         "repoUrl": "https://github.com/guligon90/empirical-tc-ts",
-        "technologies": ["TypeScript", "Node.js", "Algorithmic complexity", "Merge-sort"]
+        "technologies": ["TypeScript", "Node.js", "Algorithmic complexity", "Merge-sort"],
+        "startYear": 2022,
+        "endYear": 2022
       }
     ]
   },
